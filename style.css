@@ -1,0 +1,125 @@
+body {
+    margin: 10vh 10vw;
+    color: #0066e3;
+    font-family: urbanist;
+}
+* {
+    margin: 0 0;
+    padding: 0 0;
+}
+
+/* HOME */
+.homepage {
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 0 10vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    gap: 5px;
+}
+.intro {
+    font-size: 25px;
+    font-weight: bold;
+}
+.sophialiu {
+    font-family: swungnote;
+    font-size: 68px;
+    color: #00aede;
+    text-shadow: #0066e3 3px 3px;
+    font-weight: lighter;
+}
+.sophialiu:hover {
+    color: #e33900;
+    text-shadow: #ffd000 3px 3px;
+}
+.introsmall {
+    font-size: 20px;
+}
+.desdev {
+    font-family: swungnote;
+    font-size: 30px;
+}
+
+.contact {
+    display: flex;
+    gap: 14px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.contactlink:hover {
+    text-decoration: underline 1px;
+    text-underline-offset: 5px;
+}
+
+.nextpage {
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    gap: 6px;
+    justify-content: right;
+    cursor: pointer;
+}
+.thingsworkedon {
+    font-weight: bold;
+    font-size: 22px;
+}
+.nextpage:hover > .thingsworkedon {
+    color: #e33900;
+}
+.nextpage:hover > .pointer {
+    color: #e33900;
+}
+.pointer {
+    font-size: 26px;
+    margin-top: 3px;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    gap: 18px;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    color: #0066e3;
+    text-decoration: none;
+}
+.swl {
+    font-family: swungnote;
+    font-size: 68px;
+    margin-top: -15px;
+    color: #00aede;
+    text-shadow: #0066e3 3px 3px;
+}
+.swl:hover {
+    color: #e33900;
+    text-shadow: #ffd000 3px 3px;
+    cursor: pointer;
+}
+.active {
+    font-family: swungnote;
+}
+a:hover {
+    color: #00aede;
+}
+
+/* WORK */
+
+
+@font-face {
+    font-family: urbanist;
+    src: url('./Urbanist-VariableFont_wght.ttf');
+}
+@font-face {
+    font-family: swungnote;
+    src: url('./SwungNote.otf');
+}
