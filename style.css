@@ -56,7 +56,7 @@ body {
     font-weight: bold;
 }
 .contactlink:hover {
-    text-decoration: underline 2px;
+    text-decoration: underline 1px;
     text-underline-offset: 6px;
 }
 
@@ -288,6 +288,97 @@ h2 {
 }
 
 
+/* soph.ai */
+.sophdotai {
+    margin: 0 7vw 3vh 7vw;
+    display: flex;
+    gap: 3vw;
+}
+.gifcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+.back {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0vh 7vw;
+}
+.backcontainer {
+    margin: 4vh 0 3vh 0;
+}
+.backarrow {
+    font-size: 18px;
+}
+.back:hover {
+    color: #e33900;
+}
+.projtitle {
+    margin: 0 0 3vh 0;
+    font-family: jetbrains mono;
+    font-weight: bold;
+    font-size: 60px;
+}
+.gif {
+    width: 400px;
+    margin-top: 16px;
+    margin-bottom: 5px;
+}
+.gifplaylist {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 5px;
+}
+.gifplaylist:hover {
+    color: #65D46E;
+}
+.playlistname {
+    font-family: jetbrains mono;
+}
+.words {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.projdesc {
+    font-size: 28px;
+}
+.projdescsmall {
+    font-size: 20px;
+}
+.borzoitest {
+    font-weight: bold;
+}
+.borzoitest:hover {
+    color: #65D46E;
+    text-decoration: underline 1px;
+    text-underline-offset: 6px;
+}
+
+
+@media screen and (max-width: 1060px) {
+    .sophdotai {
+        flex-direction: column;
+    }
+    .projtitle {
+        font-size: 48px;
+    }
+    .gifcontainer {
+        order: 2;
+    }
+    .words {
+        order: 1;
+    }
+    .gif {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 430px) {
+
+}
+
 
 /* RANDOM */
 .randompage {
@@ -302,6 +393,7 @@ h2 {
 }
 .inprogress {
     margin: 7vw 0 0 7vw;
+    font-family: jetbrains mono;
 }
 
 @font-face {
@@ -311,4 +403,8 @@ h2 {
 @font-face {
     font-family: swungnote;
     src: url('./SwungNote.otf');
+}
+@font-face {
+    font-family: jetbrains mono;
+    src: url('./JetBrainsMono-VariableFont_wght.ttf');
 }
