@@ -289,6 +289,14 @@ h2 {
 
 
 /* soph.ai */
+.sophaipage {
+    border: 3vw solid #e33900;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
 .sophdotai {
     margin: 0 7vw 3vh 7vw;
     display: flex;
@@ -332,7 +340,7 @@ h2 {
     margin-top: 5px;
 }
 .gifplaylist:hover {
-    color: #65D46E;
+    color: #00aede;
 }
 .playlistname {
     font-family: jetbrains mono;
@@ -352,7 +360,7 @@ h2 {
     font-weight: bold;
 }
 .borzoitest:hover {
-    color: #65D46E;
+    color: #00aede;
     text-decoration: underline 1px;
     text-underline-offset: 6px;
 }
@@ -373,6 +381,9 @@ h2 {
     }
     .gif {
         width: 100%;
+    }
+    .sophaipage {
+        bottom: auto;
     }
 }
 @media screen and (max-width: 430px) {
