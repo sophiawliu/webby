@@ -51,9 +51,9 @@ body {
 
 .contact {
     display: flex;
-    gap: 2.8vw;
-    font-size: 18px;
-    /* font-weight: bold; */
+    gap: 2.5vw;
+    font-size: 16px;
+    font-weight: bold;
 }
 .contactlink:hover {
     text-decoration: underline 1px;
@@ -314,7 +314,7 @@ h2 {
     margin: 0vh 7vw;
 }
 .backcontainer {
-    margin: 4vh 0 3vh 0;
+    margin: 4vh 0 2vh 0;
 }
 .backarrow {
     font-size: 18px;
