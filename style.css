@@ -272,10 +272,10 @@ h2 {
         cursor: pointer;
     }
     h2 {
-        font-size: 24px;
+        font-size: 22px;
     }
     .contact {
-        font-size: 15px;
+        font-size: 14px;
         font-weight: bold;
     }
 }
@@ -386,9 +386,6 @@ h2 {
         bottom: auto;
     }
 }
-@media screen and (max-width: 430px) {
-
-}
 
 
 /* RANDOM */
@@ -396,15 +393,31 @@ h2 {
     border: 3vw solid #e33900;
     position: absolute;
     top:0;
-    bottom: 0;
+    /* bottom: 0; */
     left: 0;
     right: 0;
     margin: auto;
     height: calc(100vh-6vw);
 }
 .inprogress {
-    margin: 7vw 0 0 7vw;
+    margin: 2vw 0 3vh 7vw;
     font-family: jetbrains mono;
+    font-weight: bold;
+}
+.randomstuff {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 6vh;
+}
+@media screen and (max-width: 430px) {
+    .inprogress {
+        margin-top:4vh;
+    }
+    iframe {
+        margin-bottom: -60px;
+    }
 }
 
 @font-face {
