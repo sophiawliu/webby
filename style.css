@@ -53,7 +53,7 @@ body {
     display: flex;
     gap: 2.8vw;
     font-size: 18px;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 .contactlink:hover {
     text-decoration: underline 1px;
@@ -95,7 +95,7 @@ body {
 }
 ul {
     list-style-type: none;
-    font-weight: bold;
+    /* font-weight:bold; */
 }
 a {
     color: #0066e3;
