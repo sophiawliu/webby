@@ -326,7 +326,7 @@ h2 {
     margin: 0 0 3vh 0;
     font-family: jetbrains mono;
     font-weight: bold;
-    font-size: 60px;
+    font-size: 48px;
 }
 .gif {
     width: 400px;
@@ -366,7 +366,7 @@ h2 {
 }
 
 
-@media screen and (max-width: 1060px) {
+@media screen and (max-width: 1050px) {
     .sophdotai {
         flex-direction: column;
     }
