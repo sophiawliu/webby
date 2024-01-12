@@ -482,6 +482,7 @@ h2 {
 .haiku-image {
     width: 80vw;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.333);
+    margin-bottom: 20px;
 }
 
 @font-face {
