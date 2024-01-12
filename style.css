@@ -361,15 +361,16 @@ h2 {
     font-size: 28px;
 }
 .projdescsmall {
-    font-size: 20px;
+    font-size: 22px;
 }
 .borzoitest {
     font-weight: bold;
+    text-decoration: underline 1px;
+    text-underline-offset: 3px;
+
 }
 .borzoitest:hover {
     color: #00aede;
-    text-decoration: underline 1px;
-    text-underline-offset: 6px;
 }
 
 
@@ -437,7 +438,7 @@ h2 {
     margin-bottom: 5vh;
 }
 .blog-title {
-    font-size: 36px;
+    font-size: 40px;
     font-weight: bold;
 }
 .blog-desc {
@@ -450,7 +451,7 @@ h2 {
 }
 .blog-body {
     letter-spacing: 0.2;
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 5vh;
 }
 
@@ -466,7 +467,7 @@ h2 {
 .playlists {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 36px;
 }
 .playlist-desc {
     font-size: 14px;
