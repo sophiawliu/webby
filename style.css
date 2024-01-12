@@ -57,8 +57,8 @@ body {
     font-weight: bold;
 }
 .contactlink:hover {
-    text-decoration: underline 1px;
-    text-underline-offset: 6px;
+    text-decoration: underline 2px;
+    text-underline-offset: 3px;
 }
 
 .nextpage {
