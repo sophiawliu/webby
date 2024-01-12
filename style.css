@@ -35,6 +35,7 @@ body {
     color: #00aede;
     text-shadow: #0066e3 3px 3px;
     font-weight: lighter;
+    letter-spacing: 1px;
 }
 .sophialiu:hover {
     color: #e33900;
@@ -47,6 +48,7 @@ body {
     font-family: swungnote;
     font-size: 30px;
     font-weight: regular;
+    letter-spacing: 1px;
 }
 
 .contact {
@@ -104,6 +106,7 @@ a {
 .swl {
     font-family: swungnote;
     font-size: 68px;
+    letter-spacing: 1px;
     margin-top: -15px;
     color: #00aede;
     text-shadow: #0066e3 3px 3px;
@@ -115,6 +118,7 @@ a {
 }
 .active {
     font-family: swungnote;
+    letter-spacing: 1px;
 }
 a:hover {
     color: #00aede;
@@ -129,7 +133,7 @@ a:hover {
     top: 0;
 }
 .board {
-    margin: 3vh 7vw 4vh 7vw;
+    margin: 3vh 7vw 12vh 7vw;
     display: flex;
     width: 80vw;
     gap: 2vw;
@@ -282,9 +286,13 @@ h2 {
 
 .footer {
     display: flex;
-    flex-direction: column;
-    padding-bottom: 5vh;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
+    width: 100%;
+    padding-bottom: 5vh;
+    bottom: 0;
+    position: absolute;
 }
 
 
@@ -298,7 +306,7 @@ h2 {
     bottom: 0;
 }
 .sophdotai {
-    margin: 0 7vw 3vh 7vw;
+    margin: 0 7vw 5vh 7vw;
     display: flex;
     gap: 3vw;
 }
@@ -388,33 +396,93 @@ h2 {
 }
 
 
-/* RANDOM */
-.randompage {
+/* blog index */
+.blogindex {
     border: 3vw solid #e33900;
     position: absolute;
     top:0;
-    /* bottom: 0; */
+    bottom: 0;
     left: 0;
     right: 0;
     margin: auto;
-    height: calc(100vh-6vw);
 }
-.inprogress {
-    margin: 2vw 0 3vh 7vw;
+.blogbar {
+    margin: 0 0 0 7vw;
+    font-size: 20px;
+    font-weight: bold;
     font-family: jetbrains mono;
+    width: 80vw;
+}
+.informal-entries {
+    margin-top: 2vh;
+    font-family: jetbrains mono;
+    font-weight: lighter;
+    font-size: 18px;
+    list-style-position: inside;
+}
+
+/* blog page */
+.blogpage {
+    border: 3vw solid #e33900;
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.blogstuff {
+    margin: 4vh 7vw 12vh 7vw;
+    height: fit-content;
+}
+.blog-heading {
+    margin-bottom: 5vh;
+}
+.blog-title {
+    font-size: 36px;
     font-weight: bold;
 }
-.randomstuff {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 6vh;
+.blog-desc {
+    font-size: 18px;
 }
+.blog-date {
+    font-family: jetbrains mono;
+    font-size: 12px;
+    margin-top: 1.5vh;
+}
+.blog-body {
+    letter-spacing: 0.2;
+    font-size: 18px;
+    margin-bottom: 5vh;
+}
+
 @media screen and (max-width: 430px) {
     .inprogress {
         margin-top:4vh;
     }
+}
+
+
+/* blog specific */
+/* 12/4/23 */
+.playlists {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.playlist-desc {
+    font-size: 14px;
+    font-family: jetbrains mono;
+    margin-bottom: 10px;
+}
+.playlist-desc-comment {
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+/* 1/4/24 */
+.haiku-image {
+    width: 80vw;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.333);
 }
 
 @font-face {
