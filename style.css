@@ -281,6 +281,9 @@ h2 {
         font-size: 14px;
         font-weight: bold;
     }
+    .borzoitest {
+        font-weight: bold;
+    }
 }
 
 .footer {
@@ -366,7 +369,6 @@ h2 {
 .borzoitest {
     text-decoration: underline 2px #00aede;
     text-underline-offset: 3px;
-
 }
 .borzoitest:hover {
     color: #00aede;
