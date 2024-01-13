@@ -135,10 +135,10 @@ a:hover {
     margin: 3vh 7vw 12vh 7vw;
     display: flex;
     width: 80vw;
-    gap: 2vw;
+    gap: 3vw;
 }
 .card {
-    width: 38vw;
+    width: 39vw;
 }
 
 .cardtint {
