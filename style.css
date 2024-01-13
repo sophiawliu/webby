@@ -84,6 +84,13 @@ body {
     margin-top: 3px;
 }
 
+/* why are there 4 */
+.backcontainer-proj:hover > .back {
+    color: #e33900;
+}
+.backcontainer-proj:hover > .backpointer {
+    color: #e33900;
+}
 .backcontainer:hover > .back {
     color: #e33900;
 }
