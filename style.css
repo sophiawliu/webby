@@ -369,6 +369,7 @@ h2 {
 .borzoitest {
     text-decoration: underline 2px #00aede;
     text-underline-offset: 3px;
+    font-weight: bold;
 }
 .borzoitest:hover {
     color: #00aede;
