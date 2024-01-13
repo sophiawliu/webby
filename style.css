@@ -80,8 +80,20 @@ body {
     color: #e33900;
 }
 .pointer {
-    font-size: 24px;
-    margin-top: 2px;
+    font-size: 27px;
+    margin-top: 3px;
+}
+
+.backcontainer:hover > .back {
+    color: #e33900;
+}
+.backcontainer:hover > .backpointer {
+    color: #e33900;
+}
+.backpointer {
+    font-size: 27px;
+    position:relative;
+    top:3px;
 }
 
 /* NAVBAR */
@@ -142,7 +154,7 @@ a:hover {
 }
 
 .cardtint {
-    width: 38vw;
+    width: 39vw;
     position:relative;
     margin-bottom: 2vw;
 }
@@ -321,10 +333,12 @@ h2 {
 .back {
     font-size: 22px;
     font-weight: bold;
-    margin: 0vh 7vw;
 }
 .backcontainer {
-    margin: 4vh 0 2vh 0;
+    margin: 2vh 0 2vh 0;
+}
+.backcontainer-proj {
+    margin: 4vh 0 2vh 7vw;
 }
 .backarrow {
     font-size: 18px;
@@ -348,6 +362,7 @@ h2 {
     font-weight: bold;
     text-align: center;
     margin-top: 5px;
+    margin-bottom: 10vh;
 }
 .gifplaylist:hover {
     color: #00aede;
@@ -359,6 +374,7 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-bottom: 10vh;
 }
 .projdesc {
     font-size: 28px;
@@ -388,6 +404,7 @@ h2 {
     }
     .words {
         order: 1;
+        padding-bottom: 0;
     }
     .gif {
         width: 100%;
@@ -442,6 +459,10 @@ h2 {
 .blog-title {
     font-size: 40px;
     font-weight: bold;
+    margin-bottom: 1vh;
+}
+h1 {
+    margin-bottom: 1vh;
 }
 .blog-desc {
     font-size: 18px;
