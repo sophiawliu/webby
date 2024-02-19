@@ -35,6 +35,7 @@ body {
     color: #00aede;
     text-shadow: #0066e3 3px 3px;
     font-weight: lighter;
+    margin-right: 5px;
 }
 .sophialiu:hover {
     color: #e33900;
@@ -518,7 +519,31 @@ h1 {
 .haiku-image {
     width: 80vw;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.333);
-    margin-bottom: 20px;
+    margin-bottom: 4vh;
+}
+.haiku-book {
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    margin-bottom: 4vw;
+}
+.haiku-image-small {
+    width: 39vw;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.333);
+}
+@media screen and (max-width: 768px) {
+    .haiku-book {
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        gap: 2vw;
+        margin-bottom: 4vw;
+    }
+    .haiku-image-small {
+        width: 80vw;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.333);
+    }
 }
 
 @font-face {
