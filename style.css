@@ -558,3 +558,11 @@ h1 {
     font-family: jetbrains mono;
     src: url('./JetBrainsMono-VariableFont_wght.ttf');
 }
+
+::-moz-selection { /* Code for Firefox */
+    background: #ffd000;
+  }
+  
+  ::selection {
+    background: #ffd900;
+  }
