@@ -137,6 +137,7 @@ a {
 }
 .active {
     font-family: swungnote;
+    font-size: 20px;
     /* letter-spacing: 1px; */
 }
 a:hover {
@@ -451,6 +452,9 @@ h2 {
     font-weight: lighter;
     font-size: 18px;
     list-style-position: inside;
+}
+.blog-entry {
+    margin-bottom: 5px;
 }
 
 /* blog page */
