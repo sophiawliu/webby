@@ -588,6 +588,7 @@ h1 {
 
 ::-moz-selection { /* Code for Firefox */
     background: #ffd000;
+    color:#e33900;
   }
   
   ::selection {
