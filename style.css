@@ -137,7 +137,6 @@ a {
 }
 .active {
     font-family: swungnote;
-    font-size: 20px;
     /* letter-spacing: 1px; */
 }
 a:hover {
