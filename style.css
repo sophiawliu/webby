@@ -572,7 +572,7 @@ h1 {
 }
 /* 7/25/24 */
 .alison-letter-body {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia;
     font-size: 18px;
     line-height: 30px;
     color: black;
@@ -589,6 +589,10 @@ h1 {
 @font-face {
     font-family: jetbrains mono;
     src: url('./JetBrainsMono-VariableFont_wght.ttf');
+}
+@font-face {
+    font-family: Georgia;
+    src: url(NotoSerif-VariableFont_wdth\,wght.ttf);
 }
 
 ::-moz-selection { /* Code for Firefox */
