@@ -570,6 +570,13 @@ h1 {
     font-weight: bold;
     font-size: 21px;
 }
+/* 7/25/24 */
+.alison-letter-body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    line-height: 30px;
+    color: black;
+}
 
 @font-face {
     font-family: urbanist;
