@@ -578,6 +578,10 @@ h1 {
     line-height: 30px;
     color: black;
 }
+.letter-link {
+    text-decoration: underline 1px #00aede;
+    text-underline-offset: 3px;
+}
 
 @font-face {
     font-family: urbanist;
