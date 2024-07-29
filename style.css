@@ -579,13 +579,13 @@ h1 {
     color: black;
 }
 .letter-link {
-    color: #9c6300;
-    text-decoration: underline 1px #9c6300;
+    color: #0066e3;
+    text-decoration: underline 1px #00aede;
     text-underline-offset: 4px;
 }
 .letter-link:hover {
-    color: #b19056;
-    text-decoration: underline 1px #b19056;
+    color: #00aede;
+    text-decoration: underline 1px #00aede;
 }
 
 @font-face {
