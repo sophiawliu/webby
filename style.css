@@ -494,10 +494,14 @@ h2 {
     margin-left: 16px;
 }
 .blog-entry {
-    margin-bottom: 14px;
+    margin-bottom: 18px;
     display: flex;
     rotate: 0deg;
-    font-size: 18px;
+    font-size: 20px;
+    line-height: 20px;
+}
+.date {
+    font-size: 14px;
 }
 
 /* blog page */
