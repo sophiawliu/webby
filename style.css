@@ -75,7 +75,7 @@ body {
 }
 .thingsworkedon {
     font-weight: bold;
-    font-size: 22px;
+    font-size: 18px;
 }
 .nextpage:hover > .thingsworkedon {
     color: #e33900;
@@ -246,9 +246,10 @@ a:hover {
     height: 100%;
 }
 h2 {
-    font-size: 26px;
+    font-size: 28px;
     margin: 5vh 0 0 7vw;
     font-weight: regular;
+    width: 82vw;
 }
 
 @media screen and (max-width: 768px) {
@@ -268,8 +269,18 @@ h2 {
 
 /* FOR PHONES */
 @media screen and (max-width: 430px) {
-    .thingsworkedon {
-        font-size: 18px;
+    .sophialiu {
+        font-family: swungnote;
+        font-size: 42px;
+        color: #00aede;
+        text-shadow: #0066e3 1.5px 1.5px;
+        font-weight: lighter;
+        margin-right: 5px;
+    }
+    .sophialiu:hover {
+        color: #e33900;
+        text-shadow: #ffd000 1.5px 1.5px;
+        transition: all .3s linear;
     }
     .navbar {
         margin: 6vh 0 0 7vw;
@@ -283,6 +294,13 @@ h2 {
     }
     .swl {
         font-size: 38px;
+        text-shadow: #0066e3 1.5px 1.5px;
+    }
+    .swl:hover {
+        color: #e33900;
+        text-shadow: #ffd000 1.5px 1.5px;
+        cursor: pointer;
+        transition: all .3s linear;
     }
     li {
         font-size: 12px;
@@ -327,9 +345,6 @@ h2 {
     .darkgreen:before { 
         background:#2f6e47d5;
         cursor: pointer;
-    }
-    h2 {
-        font-size: 22px;
     }
     .contact {
         font-size: 14px;
