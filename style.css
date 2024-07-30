@@ -32,35 +32,37 @@ body {
 }
 .sophialiu {
     font-family: swungnote;
-    font-size: 67px;
+    font-size: 50px;
     color: #00aede;
-    text-shadow: #0066e3 3px 3px;
+    text-shadow: #0066e3 2.5px 2.5px;
     font-weight: lighter;
     margin-right: 5px;
 }
 .sophialiu:hover {
     color: #e33900;
-    text-shadow: #ffd000 3px 3px;
+    text-shadow: #ffd000 2.5px 2.5px;
+    transition: all .3s linear;
 }
 .introsmall {
     font-size: 20px;
 }
 .desdev {
     font-family: swungnote;
-    font-size: 30px;
+    font-size: 28px;
     font-weight: regular;
     /* letter-spacing: 1px; */
+}
+.borzois {
+    background-color: #ffd000;
+    color: #e33900;
 }
 
 .contact {
     display: flex;
-    gap: 2.5vw;
+    gap: 10px;
     font-size: 16px;
     font-weight: bold;
-}
-.contactlink:hover {
-    text-decoration: underline 2px;
-    text-underline-offset: 3px;
+    margin-bottom: 30px;
 }
 
 .nextpage {
@@ -77,9 +79,11 @@ body {
 }
 .nextpage:hover > .thingsworkedon {
     color: #e33900;
+    transition: all .3s linear;
 }
 .nextpage:hover > .pointer {
     color: #e33900;
+    transition: all .3s linear;
 }
 .pointer {
     font-size: 27px;
@@ -89,15 +93,19 @@ body {
 /* why are there 4 */
 .backcontainer-proj:hover > .back {
     color: #e33900;
+    transition: all .3s linear;
 }
 .backcontainer-proj:hover > .backpointer {
     color: #e33900;
+    transition: all .3s linear;
 }
 .backcontainer:hover > .back {
     color: #e33900;
+    transition: all .3s linear;
 }
 .backcontainer:hover > .backpointer {
     color: #e33900;
+    transition: all .3s linear;
 }
 .backpointer {
     font-size: 27px;
@@ -108,40 +116,50 @@ body {
 /* NAVBAR */
 .navbar {
     display: flex;
-    gap: 18px;
+    gap: 28px;
     margin: 8vh 0 0 7vw;
     align-self: flex-start;
     position: sticky;
-    top: 8vh;
+    top: 4vh;
     z-index: 1;
 }
 ul {
     list-style-type: none;
-    font-weight:bold;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    align-items:baseline;
 }
 a {
     color: #0066e3;
     text-decoration: none;
 }
+li {
+    font-size: 14px;
+    rotate: -35deg;
+    margin-left: -16px;
+}
 .swl {
     font-family: swungnote;
-    font-size: 68px;
+    font-size: 44px;
     /* letter-spacing: 1px; */
     margin-top: -15px;
     color: #00aede;
-    text-shadow: #0066e3 3px 3px;
+    text-shadow: #0066e3 2.5px 2.5px;
 }
 .swl:hover {
     color: #e33900;
-    text-shadow: #ffd000 3px 3px;
+    text-shadow: #ffd000 2.5px 2.5px;
     cursor: pointer;
+    transition: all .3s linear;
 }
 .active {
     font-family: swungnote;
-    /* letter-spacing: 1px; */
+    font-size: 20px;
 }
 a:hover {
     color: #00aede;
+    transition: all .3s linear;
 }
 
 /* WORK */
@@ -153,7 +171,7 @@ a:hover {
     top: 0;
 }
 .board {
-    margin: 3vh 7vw 12vh 7vw;
+    margin: 3vh 7vw 18vh 7vw;
     display: flex;
     width: 80vw;
     gap: 3vw;
@@ -256,13 +274,22 @@ h2 {
     .navbar {
         margin: 6vh 0 0 7vw;
         top: 4vh;
-        gap: 12px;
+        gap: 26px;
+        align-items:flex-end;
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
     }
     .swl {
-        font-size: 60px;
+        font-size: 38px;
     }
     li {
-        font-size: 14px;
+        font-size: 12px;
+        rotate: 0deg;
+    }
+    .active {
+        font-size: 12px;
     }
     .cardinfo {
         display: flex;
@@ -270,6 +297,12 @@ h2 {
         justify-content: center;
         align-items: center;
         height: 100%;
+    }
+    .cardtitle {
+        font-size: 28px;
+    }
+    .carddescription {
+        font-size: 14px;
     }
     .spotifygreen:before { 
         background:#65d46ed8;
@@ -313,13 +346,16 @@ h2 {
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding-bottom: 5vh;
+    /* padding-bottom: 5vh; */
     bottom: 0;
     position: absolute;
 }
 
 
 /* soph.ai */
+.large-iframe {
+    margin-top: 5px;
+}
 .sophaipage {
     border: 3vw solid #e33900;
     position: absolute;
@@ -344,7 +380,7 @@ h2 {
     font-weight: bold;
 }
 .backcontainer {
-    margin: 2vh 0 2vh 0;
+    margin: 6vh 0 6vh 0;
 }
 .backcontainer-proj {
     margin: 4vh 0 2vh 7vw;
@@ -354,6 +390,7 @@ h2 {
 }
 .back:hover {
     color: #e33900;
+    transition: all .3s linear;
 }
 .projtitle {
     margin: 0 0 0.5vh 0;
@@ -380,6 +417,7 @@ h2 {
 }
 .gifplaylist:hover {
     color: #00aede;
+    transition: all .3s linear;
 }
 .playlistname {
     font-family: jetbrains mono;
@@ -403,6 +441,7 @@ h2 {
 }
 .borzoitest:hover {
     color: #00aede;
+    transition: all .3s linear;
 }
 
 
@@ -447,14 +486,18 @@ h2 {
     width: 80vw;
 }
 .informal-entries {
-    margin-top: 2vh;
+    margin-top: 3vh;
     font-family: jetbrains mono;
     font-weight: lighter;
-    font-size: 18px;
     list-style-position: inside;
+    flex-direction: column;
+    margin-left: 16px;
 }
 .blog-entry {
-    margin-bottom: 5px;
+    margin-bottom: 14px;
+    display: flex;
+    rotate: 0deg;
+    font-size: 18px;
 }
 
 /* blog page */
@@ -474,7 +517,7 @@ h2 {
     margin-bottom: 5vh;
 }
 .blog-title {
-    font-size: 48px;
+    font-size: 45px;
     margin-bottom: 1vh;
     font-family: swungnote;
 }
@@ -586,6 +629,42 @@ h1 {
 .letter-link:hover {
     color: #00aede;
     text-decoration: underline 1px #00aede;
+    transition: all .3s linear;
+}
+
+/* contact images */
+.contact-image {
+    width: 21px;
+    height: 21px;
+    background-size: contain;
+}
+.email {
+    background-image: url(./media/contact/email.png);
+}
+.linkedin {
+    background-image: url(./media/contact/linkedin.png);
+}
+.github {
+    background-image: url(./media/contact/github.png);
+}
+.spotify {
+    background-image: url(./media/contact/spotify.png);
+}
+.email:hover {
+    background-image: url(./media/contact/email-hover.png);
+    transition: all .3s linear;
+}
+.linkedin:hover {
+    background-image: url(./media/contact/linkedin-hover.png);
+    transition: all .3s linear;
+}
+.github:hover {
+    background-image: url(./media/contact/github-hover.png);
+    transition: all .3s linear;
+}
+.spotify:hover {
+    background-image: url(./media/contact/spotify-hover.png);
+    transition: all .3s linear;
 }
 
 @font-face {
@@ -594,7 +673,7 @@ h1 {
 }
 @font-face {
     font-family: swungnote;
-    src: url('./SwungNote.otf');
+    src: url('./Peralta-Regular.ttf');
 }
 @font-face {
     font-family: jetbrains mono;
