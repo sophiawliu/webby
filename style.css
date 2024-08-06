@@ -259,7 +259,6 @@ a:hover {
     justify-content: center;
     align-items: center;
     height: 100%;
-    gap: 2px;
 }
 h2 {
     font-size: 28px;
@@ -284,7 +283,7 @@ h2 {
 }
 
 /* FOR PHONES */
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 460px) {
     .sophialiu {
         font-family: swungnote;
         font-size: 44px;
@@ -390,13 +389,28 @@ h2 {
     position: absolute;
 }
 
+/* whole vibe catalog */
+.projtitle.wvc {
+    font-family: windsor;
+}
+@media screen and (max-width: 460px) {
+    .projtitle.wvc {
+        font-family: windsor;
+        font-size: 33px;
+    }
+}
+
+
 /* kekai */
+.image-desc.gif-desc {
+    margin-top: 5px;
+}
 .kekai-logo {
     width: 200px;
     margin-bottom: 10px;
 }
 .kekaigif {
-    width: 250px;
+    width: 380px;
     margin-top: 16px;
     margin-bottom: 5px;
 }
@@ -428,7 +442,6 @@ h2 {
     left: 0;
     right: 0;
     top: 0;
-    bottom: 0;
 }
 .sophdotai {
     margin: 0 7vw 5vh 7vw;
@@ -470,7 +483,7 @@ h2 {
     font-weight: bold;
 }
 .gif {
-    width: 340px;
+    width: 500px;
     margin-top: 16px;
     margin-bottom: 5px;
 }
@@ -753,6 +766,10 @@ h1 {
 @font-face {
     font-family: Georgia;
     src: url(NotoSerif-VariableFont_wdth\,wght.ttf);
+}
+@font-face {
+    font-family: windsor;
+    src: url(./media/Windsor\ Regular.ttf);
 }
 
 ::-moz-selection { /* Code for Firefox */
