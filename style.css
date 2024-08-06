@@ -41,7 +41,7 @@ body {
 .sophialiu:hover {
     color: #e33900;
     text-shadow: #ffd000 2.5px 2.5px;
-    transition: all .3s linear;
+    transition: all .2s linear;
 }
 .introsmall {
     font-size: 20px;
@@ -79,11 +79,11 @@ body {
 }
 .nextpage:hover > .thingsworkedon {
     color: #e33900;
-    transition: all .3s linear;
+    transition: all .2s linear;
 }
 .nextpage:hover > .pointer {
     color: #e33900;
-    transition: all .3s linear;
+    transition: all .2s linear;
 }
 .pointer {
     font-size: 27px;
@@ -93,19 +93,19 @@ body {
 /* why are there 4 */
 .backcontainer-proj:hover > .back {
     color: #e33900;
-    transition: all .3s linear;
+    transition: all .2s linear;
 }
 .backcontainer-proj:hover > .backpointer {
     color: #e33900;
-    transition: all .3s linear;
+    transition: all .2s linear;
 }
 .backcontainer:hover > .back {
     color: #e33900;
-    transition: all .3s linear;
+    transition: all .2s linear;
 }
 .backcontainer:hover > .backpointer {
     color: #e33900;
-    transition: all .3s linear;
+    transition: all .2s linear;
 }
 .backpointer {
     font-size: 27px;
@@ -151,7 +151,7 @@ li {
     color: #e33900;
     text-shadow: #ffd000 2.5px 2.5px;
     cursor: pointer;
-    transition: all .3s linear;
+    transition: all .2s linear;
 }
 .active {
     font-family: swungnote;
@@ -159,7 +159,7 @@ li {
 }
 a:hover {
     color: #00aede;
-    transition: all .3s linear;
+    transition: all .2s linear;
 }
 
 /* WORK */
@@ -195,7 +195,7 @@ a:hover {
     right: 0;
     height: calc(100% - 4px);
     background: none;
-    transition: all .3s linear;
+    transition: all .2s linear;
 }
 .cardtint:hover {
     cursor: pointer;
@@ -280,7 +280,7 @@ h2 {
     .sophialiu:hover {
         color: #e33900;
         text-shadow: #ffd000 1.5px 1.5px;
-        transition: all .3s linear;
+        transition: all .2s linear;
     }
     .navbar {
         margin: 6vh 0 0 7vw;
@@ -300,7 +300,7 @@ h2 {
         color: #e33900;
         text-shadow: #ffd000 1.5px 1.5px;
         cursor: pointer;
-        transition: all .3s linear;
+        transition: all .2s linear;
     }
     li {
         font-size: 12px;
@@ -405,7 +405,7 @@ h2 {
 }
 .back:hover {
     color: #e33900;
-    transition: all .3s linear;
+    transition: all .1s linear;
 }
 .projtitle {
     margin: 0 0 0.5vh 0;
@@ -432,7 +432,7 @@ h2 {
 }
 .gifplaylist:hover {
     color: #00aede;
-    transition: all .3s linear;
+    transition: all .2s linear;
 }
 .playlistname {
     font-family: jetbrains mono;
@@ -456,7 +456,7 @@ h2 {
 }
 .borzoitest:hover {
     color: #00aede;
-    transition: all .3s linear;
+    transition: all .2s linear;
 }
 
 
@@ -584,7 +584,7 @@ h1 {
 /* 1/4/24 */
 .haiku-image {
     width: 80vw;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.333);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.233);
     margin-bottom: 4vh;
 }
 .haiku-book {
@@ -596,7 +596,7 @@ h1 {
 }
 .haiku-image-small {
     width: 39vw;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.333);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.233);
 }
 @media screen and (max-width: 768px) {
     .haiku-book {
@@ -608,14 +608,14 @@ h1 {
     }
     .haiku-image-small {
         width: 80vw;
-        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.333);
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.233);
     }
 }
 
 /* 7/13/2024 */
 .blog-image {
     width: 80vw;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.333);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.233);
     margin-bottom: 10px;
 }
 .image-plus-desc {
@@ -648,7 +648,7 @@ h1 {
 .letter-link:hover {
     color: #00aede;
     text-decoration: underline 1px #00aede;
-    transition: all .3s linear;
+    transition: all .2s linear;
 }
 
 /* contact images */
@@ -671,19 +671,19 @@ h1 {
 }
 .email:hover {
     background-image: url(./media/contact/email-hover.png);
-    transition: all .3s linear;
+    transition: all .2s linear;
 }
 .linkedin:hover {
     background-image: url(./media/contact/linkedin-hover.png);
-    transition: all .3s linear;
+    transition: all .2s linear;
 }
 .github:hover {
     background-image: url(./media/contact/github-hover.png);
-    transition: all .3s linear;
+    transition: all .2s linear;
 }
 .spotify:hover {
     background-image: url(./media/contact/spotify-hover.png);
-    transition: all .3s linear;
+    transition: all .2s linear;
 }
 
 @font-face {
