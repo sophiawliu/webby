@@ -200,28 +200,36 @@ a:hover {
 .cardtint:hover {
     cursor: pointer;
 }
+.wvcblue:hover:before { 
+    background:#70adbff1;
+    cursor: pointer;
+}
 .spotifygreen:hover:before { 
-    background:#65d46ed8;
+    background:#65d46eea;
     cursor: pointer;
 }
 .brown:hover:before { 
-    background:#4d9d9ee1;
+    background:#4d9d9eee;
     cursor: pointer;
 }
 .red:hover:before { 
-    background:#d33520d0;
+    background:#d33520ea;
     cursor: pointer;
 }
 .pink:hover:before { 
-    background:#e8338ed4;
+    background:#e8338ee9;
     cursor: pointer;
 }
 .blue:hover:before { 
-    background:#6f95e6dc;
+    background:#6f95e6ec;
     cursor: pointer;
 }
 .darkgreen:hover:before { 
-    background:#2f6e47d5;
+    background:#2f6e47e9;
+    cursor: pointer;
+}
+.kekaiblue:hover:before { 
+    background:#73c3aee9;
     cursor: pointer;
 }
 
@@ -231,12 +239,19 @@ a:hover {
     width: 38vw;
 }
 .cardtitle {
-    font-size: 36px;
+    font-size: 30px;
     font-weight: bold;
     color: white;
 }
 .carddescription {
     color: white;
+    text-align: center;
+    font-size: 18px;
+}
+.cardyear {
+    color: white;
+    font-size: 14px;
+    font-family: jetbrains mono;
 }
 .cardtint:hover > .cardinfo {
     display: flex;
@@ -244,6 +259,7 @@ a:hover {
     justify-content: center;
     align-items: center;
     height: 100%;
+    gap: 2px;
 }
 h2 {
     font-size: 28px;
@@ -259,7 +275,7 @@ h2 {
     .card {
         width: 80vw;
     }
-    .cardtint.spotifygreen, .cardtint.brown, .cardtint.red, .cardtint.pink, .cardtint.blue, .cardtint.darkgreen {
+    .cardtint.wvcblue, .cardtint.spotifygreen, .cardtint.brown, .cardtint.red, .cardtint.pink, .cardtint.blue, .cardtint.darkgreen, .cardtint.kekaiblue {
         width: 80vw;
     }
     .cardinfo {
@@ -322,6 +338,10 @@ h2 {
     .carddescription {
         font-size: 14px;
     }
+    .wvcblue:before {
+        background:#70adbfd6;
+        cursor: pointer;
+    }
     .spotifygreen:before { 
         background:#65d46ed8;
         cursor: pointer;
@@ -346,6 +366,10 @@ h2 {
         background:#2f6e47d5;
         cursor: pointer;
     }
+    .kekaiblue:before { 
+        background:#73c3aee0;
+        cursor: pointer;
+    }
     .contact {
         font-size: 14px;
         font-weight: bold;
@@ -365,6 +389,33 @@ h2 {
     bottom: 0;
     position: absolute;
 }
+
+/* kekai */
+.kekai-logo {
+    width: 200px;
+    margin-bottom: 10px;
+}
+.kekaigif {
+    width: 250px;
+    margin-top: 16px;
+    margin-bottom: 5px;
+}
+@media screen and (max-width: 1050px) {
+    .kekaigif {
+        width: 100%;
+    }
+    .kekaigifcontainer {
+        order: 2;
+    }
+}
+.kekaigifcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 50px;
+}
+
 
 
 /* soph.ai */
@@ -628,6 +679,7 @@ h1 {
 .image-desc {
     font-size: 14px;
     font-style: italic;
+    text-align: center;
 }
 .blog-header {
     font-weight: bold;
