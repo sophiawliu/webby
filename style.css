@@ -376,6 +376,10 @@ h2 {
     .borzoitest {
         font-weight: bold;
     }
+    .thingsworkedon {
+        font-weight: bold;
+        font-size: 18px;
+    }
 }
 
 .footer {
@@ -753,23 +757,23 @@ h1 {
 
 @font-face {
     font-family: urbanist;
-    src: url('./Urbanist-VariableFont_wght.ttf');
+    src: url('./media/fonts/Urbanist-VariableFont_wght.ttf');
 }
 @font-face {
     font-family: swungnote;
-    src: url('./Peralta-Regular.ttf');
+    src: url('./media/fonts/Peralta-Regular.ttf');
 }
 @font-face {
     font-family: jetbrains mono;
-    src: url('./JetBrainsMono-VariableFont_wght.ttf');
+    src: url('./media/fonts/JetBrainsMono-VariableFont_wght.ttf');
 }
 @font-face {
     font-family: Georgia;
-    src: url(NotoSerif-VariableFont_wdth\,wght.ttf);
+    src: url(./media/fonts/NotoSerif-VariableFont_wdth\,wght.ttf);
 }
 @font-face {
     font-family: windsor;
-    src: url(./media/Windsor\ Regular.ttf);
+    src: url(./media/fonts/Windsor\ Regular.ttf);
 }
 
 ::-moz-selection { /* Code for Firefox */
