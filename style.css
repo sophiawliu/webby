@@ -396,6 +396,7 @@ h2 {
 /* whole vibe catalog */
 .projtitle.wvc {
     font-family: windsor;
+    font-weight: normal;
 }
 @media screen and (max-width: 460px) {
     .projtitle.wvc {
