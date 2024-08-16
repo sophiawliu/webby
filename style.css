@@ -282,8 +282,91 @@ h2 {
     }
 }
 
+
+/* 7/13/2024 */
+.blog-image {
+    width: 60%;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.233);
+    margin-bottom: 10px;
+}
+.image-plus-desc {
+    margin-bottom: 4vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.image-desc {
+    width: 60%;
+    font-size: 14px;
+    font-style: italic;
+    text-align: center;
+}
+.blog-header {
+    font-weight: bold;
+    font-size: 21px;
+}
+/* 7/25/24 */
+.alison-letter-body {
+    font-family: Georgia;
+    font-size: 18px;
+    line-height: 30px;
+    color: black;
+}
+.letter-link {
+    color: #0066e3;
+    text-decoration: underline 1px #00aede;
+    text-underline-offset: 4px;
+}
+.letter-link:hover {
+    color: #00aede;
+    text-decoration: underline 1px #00aede;
+    transition: all .2s linear;
+}
+
+/* contact images */
+.contact-image {
+    width: 21px;
+    height: 21px;
+    background-size: contain;
+}
+.email {
+    background-image: url(./media/contact/email.png);
+}
+.linkedin {
+    background-image: url(./media/contact/linkedin.png);
+}
+.github {
+    background-image: url(./media/contact/github.png);
+}
+.spotify {
+    background-image: url(./media/contact/spotify.png);
+}
+.email:hover {
+    background-image: url(./media/contact/email-hover.png);
+    transition: all .2s linear;
+}
+.linkedin:hover {
+    background-image: url(./media/contact/linkedin-hover.png);
+    transition: all .2s linear;
+}
+.github:hover {
+    background-image: url(./media/contact/github-hover.png);
+    transition: all .2s linear;
+}
+.spotify:hover {
+    background-image: url(./media/contact/spotify-hover.png);
+    transition: all .2s linear;
+}
+
 /* FOR PHONES */
 @media screen and (max-width: 460px) {
+    .blog-image {
+        width: 80vw;
+    }
+    .image-desc {
+        width: 80vw;
+    }
     .sophialiu {
         font-family: swungnote;
         font-size: 44px;
@@ -679,81 +762,6 @@ h1 {
         width: 80vw;
         box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.233);
     }
-}
-
-/* 7/13/2024 */
-.blog-image {
-    width: 80vw;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.233);
-    margin-bottom: 10px;
-}
-.image-plus-desc {
-    margin-bottom: 4vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.image-desc {
-    font-size: 14px;
-    font-style: italic;
-    text-align: center;
-}
-.blog-header {
-    font-weight: bold;
-    font-size: 21px;
-}
-/* 7/25/24 */
-.alison-letter-body {
-    font-family: Georgia;
-    font-size: 18px;
-    line-height: 30px;
-    color: black;
-}
-.letter-link {
-    color: #0066e3;
-    text-decoration: underline 1px #00aede;
-    text-underline-offset: 4px;
-}
-.letter-link:hover {
-    color: #00aede;
-    text-decoration: underline 1px #00aede;
-    transition: all .2s linear;
-}
-
-/* contact images */
-.contact-image {
-    width: 21px;
-    height: 21px;
-    background-size: contain;
-}
-.email {
-    background-image: url(./media/contact/email.png);
-}
-.linkedin {
-    background-image: url(./media/contact/linkedin.png);
-}
-.github {
-    background-image: url(./media/contact/github.png);
-}
-.spotify {
-    background-image: url(./media/contact/spotify.png);
-}
-.email:hover {
-    background-image: url(./media/contact/email-hover.png);
-    transition: all .2s linear;
-}
-.linkedin:hover {
-    background-image: url(./media/contact/linkedin-hover.png);
-    transition: all .2s linear;
-}
-.github:hover {
-    background-image: url(./media/contact/github-hover.png);
-    transition: all .2s linear;
-}
-.spotify:hover {
-    background-image: url(./media/contact/spotify-hover.png);
-    transition: all .2s linear;
 }
 
 @font-face {
