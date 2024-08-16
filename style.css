@@ -174,7 +174,7 @@ a:hover {
     margin: 3vh 7vw 18vh 7vw;
     display: flex;
     width: 80vw;
-    gap: 3vw;
+    column-gap: 3vw;
 }
 .card {
     width: 39vw;
