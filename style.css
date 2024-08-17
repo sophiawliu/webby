@@ -640,9 +640,9 @@ h2 {
     border: 3vw solid #e33900;
     position: absolute;
     top:0;
-    bottom: 0;
     left: 0;
     right: 0;
+    bottom: 0;
     margin: auto;
 }
 .blogbar {
@@ -653,15 +653,16 @@ h2 {
     width: 80vw;
 }
 .informal-entries {
-    margin-top: 3vh;
+    margin-top: 4vh;
     font-family: jetbrains mono;
     font-weight: lighter;
     list-style-position: inside;
     flex-direction: column;
     margin-left: 16px;
+    margin-bottom: 8vh;
 }
 .blog-entry {
-    margin-bottom: 18px;
+    margin-bottom: 24px;
     display: flex;
     rotate: 0deg;
     font-size: 20px;
