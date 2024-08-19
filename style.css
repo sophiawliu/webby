@@ -323,6 +323,12 @@ h2 {
     text-decoration: underline 1px #00aede;
     transition: all .2s linear;
 }
+#update-line {
+    border: none;
+    margin-top: 100px;
+    border-top: 5px dashed #e33900;
+    margin-bottom: 100px;
+}
 
 /* contact images */
 .contact-image {
