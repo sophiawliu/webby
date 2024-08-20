@@ -496,8 +496,12 @@ h2 {
 
 
 /* kekai */
-.image-desc.gif-desc {
+.gif-desc {
     margin-top: 5px;
+    /* width: 60%; */
+    font-size: 14px;
+    font-style: italic;
+    text-align: center;
 }
 .kekai-logo {
     width: 200px;
