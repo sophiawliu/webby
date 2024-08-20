@@ -471,6 +471,7 @@ h2 {
     }
 }
 
+
 .footer {
     display: flex;
     flex-direction: row;
@@ -726,6 +727,12 @@ h1 {
     }
 }
 
+/* youtube */
+@media screen and (max-width: 780px) {
+    .youtube {
+        width: 100%;
+    }
+}
 
 /* blog specific */
 /* 12/4/23 */
@@ -761,6 +768,13 @@ h1 {
     width: 39vw;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.233);
 }
+
+/* key stuff */
+.youtube {
+    display: block;
+    margin: 0 auto;
+}
+
 @media screen and (max-width: 768px) {
     .haiku-book {
         width: 80vw;
