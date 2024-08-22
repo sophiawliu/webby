@@ -712,10 +712,9 @@ video {
 .blogindex {
     border: 3vw solid #e33900;
     position: absolute;
-    top:0;
+    top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
     margin: auto;
 }
 .blogbar {
@@ -726,7 +725,7 @@ video {
     width: 80vw;
 }
 .informal-entries {
-    margin-top: 4vh;
+    margin-top: 5vh;
     font-family: jetbrains mono;
     font-weight: lighter;
     list-style-position: inside;
@@ -735,14 +734,14 @@ video {
     margin-bottom: 8vh;
 }
 .blog-entry {
-    margin-bottom: 24px;
+    margin-bottom: 40px;
     display: flex;
     rotate: 0deg;
-    font-size: 20px;
+    font-size: 24px;
     line-height: 20px;
 }
 .date {
-    font-size: 14px;
+    font-size: 15px;
 }
 
 /* blog page */
