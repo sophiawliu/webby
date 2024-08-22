@@ -487,14 +487,75 @@ h2 {
 .projtitle.wvc {
     font-family: windsor;
     font-weight: normal;
+    font-size: 50px;
 }
-@media screen and (max-width: 460px) {
+
+video {
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.233);
+}
+.blog-heading {
+    font-weight: bold;
+    font-size: 45px;
+    width: 100%;
+    text-align: center;
+}
+.demo-outer {
+    width: 80vw;
+    margin-left: 7vw;
+}
+.demo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    margin-bottom: 100px;
+}
+.video-plus-desc {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+.video-desc {
+    width: calc(80vw - 60% - 40px);
+    font-size: 20px;
+}
+.vid-number {
+    font-size: 45px;
+    font-weight: bold;
+}
+.windsor-font {
+    font-family: windsor;
+    color: #000000;
+}
+.gap {
+    height: 100px;
+}
+@media screen and (max-width: 800px) {
+    .video-plus-desc {
+        flex-direction: column;
+    }
+    video {
+        width: 80vw;
+    }
+    .video-desc {
+        width: 80vw;
+    }
+}
+@media screen and (max-width: 480px) {
     .projtitle.wvc {
         font-family: windsor;
+        font-size: 35px;
+    }
+    .blog-heading {
+        font-size: 36px;
+    }
+    .vid-number {
         font-size: 40px;
     }
 }
-
 
 /* kekai */
 .gif-desc {
