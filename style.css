@@ -502,6 +502,7 @@ video {
 .demo-outer {
     width: 80vw;
     margin-left: 7vw;
+    margin-bottom: 100px;
 }
 .demo {
     display: flex;
