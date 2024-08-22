@@ -786,6 +786,9 @@ h1 {
     .inprogress {
         margin-top:4vh;
     }
+    .blog-title {
+        font-size: 38px;
+    }
 }
 
 /* youtube */
