@@ -734,11 +734,10 @@ video {
     margin-bottom: 8vh;
 }
 .blog-entry {
-    margin-bottom: 40px;
+    margin-bottom: 44px;
     display: flex;
     rotate: 0deg;
     font-size: 24px;
-    line-height: 20px;
 }
 .date {
     font-size: 15px;
