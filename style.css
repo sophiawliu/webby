@@ -821,26 +821,19 @@ h1 {
     margin-bottom: 4vh;
 }
 .haiku-book {
-    width: 80vw;
+    width: 68vw;
     display: flex;
     flex-direction: row;
-    gap: 2vw;
+    gap: 4vw;
     margin-bottom: 4vh;
 }
 .haiku-image-small {
-    width: 39vw;
+    width: 32vw;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.233);
 }
-
-/* key stuff */
-.youtube {
-    display: block;
-    margin: 0 auto;
-}
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 460px) {
     .haiku-book {
-        width: 80vw;
+        width: 80vw;        
         display: flex;
         flex-direction: column;
         gap: 2vw;
@@ -848,8 +841,13 @@ h1 {
     }
     .haiku-image-small {
         width: 80vw;
-        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.233);
     }
+}
+
+/* key stuff */
+.youtube {
+    display: block;
+    margin: 0 auto;
 }
 
 @font-face {
