@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify, WTF? | Blog.phia</title>
+    <link href="../../style.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../../favicon.png" />
+</head>
+<body>
+
+    <div class="blogpage">
+        
+        <div class="navbar">
+            <a class="swl" href="https://sophiawliu.com/">Sophia Liu</a>
+            <ul class="menu">
+                <li><a href="https://sophiawliu.com/">HOME</a></li>
+                <li><a href="../../work/">WORK</a></li>
+                <li class="active"><a href="../">BLOG</a></li>
+            </ul>
+        </div>
+
+
+        <div class="blogstuff">
+
+            <div class="backcontainer">
+                <a href="../" class="backpointer">☜</a><a class="back" href="../"> Back to blog index</a>
+            </div>
+
+            <div class="blog-heading">
+                <p class="blog-title">Spotify, WTF?</p>
+                <p class="blog-desc">The time Spotify totally stole my idea.</p>
+                <p class="blog-date">October 14th, 2024</p>
+            </div>
+
+            <p class="blog-body">
+                OK, maybe not. But it's entirely possible given the timeline and FACTS. 🤓 Hear me out.
+            </p>
+            <p class="blog-body">
+                <a class="borzoitest" href="https://sophiawliu.com/work/soph.ai/" target="_blank">soph.ai</a> is the "GPT wrapper" (pejorative to some, not to me!) I made last fall while procrastinating for finals. I wanted to apply my freshly acquired web development skills to my primary hobby: making Spotify playlists. Considering the amount of time and thought I put into the art + science of playlist curation, and the amount of pride I get out of it, it's a hobby for me at this point.
+            </p>
+            <p class="blog-body">
+                soph.ai is a simple text-to-playlist model with an interface that consists of a single text box for entirely open-ended user input. You can type anything at all. My friend tried to mess with it by typing in the <a class="borzoitest" href="https://open.spotify.com/playlist/5TiL2CIUkRG0HrhpAVk11n?si=52828e79ca81436d" target="_blank">digits of pi</a> he has memorized. See it in action:
+            </p>
+            <div class="image-plus-desc">
+                <img class="blog-image" src="../../work/soph.ai/sophai.gif" alt="extension request">
+                <p class="image-desc">Input text, see a loading spinny wheel thing, and get a custom playlist with a two-tone ombre cover.</p>
+            </div>
+            <div class="image-plus-desc">
+                <img class="blog-image" src="./covers.png" alt="extension request">
+                <p class="image-desc">soph.ai's playlists can't beat the real Sophia's playlists but it does a decent job and recommends me plenty of fresh finds.</p>
+            </div>
+            <p class="blog-body">
+                Unfortunately for me, all external applications using Spotify's API need to be approved by Spotify's Developer Platform management team before they can be extended to all users on Spotify. Without extension request approval, only the developer's friends and family whose emails and usernames have to be manually added on the application dashboard can use the application. Such was the fate of soph.ai.
+            </p>
+            <p class="blog-body">I submitted my entension request on November 24th, 2023...</p>
+            <div class="image-plus-desc">
+                <img class="blog-image" style="width: 80vw" src="./extension-request.png" alt="extension request">
+            </div>
+            <p class="blog-body">... and I received my extension request rejection email from developer-platform@spotify.com on December 19th, 2023 for the provided reason.</p>
+            <div class="image-plus-desc">
+                <img class="blog-image" style="width: 80vw" src="./email.png" alt="email rejecting request">
+            </div>
+            <p class="blog-body">
+                So, I accepted its fate and decided soph.ai would just have to be a fun li'l app that could just be my very own "GPT wrapper" (not derogatory). I recently used it in an assignment for my Music & Data class!
+            </p>
+            <p class="blog-body">Now, that would otherwise be fine and dandy if not for Spotify's <a class="borzoitest" href="https://newsroom.spotify.com/2024-09-24/ai-playlist-expanding-usa-canada-ireland-new-zealand/" target="_blank">announcement</a> on September 24th, 2024. That's <i>10 months</i> after I sent Spotify's developer management team screenshots and recordings of how soph.ai works in my extension request form.</p>
+            <div class="image-plus-desc">
+                <img class="blog-image" style="width: 80vw" src="./announcement.png" alt="email rejecting request">
+            </div>
+            <p class="blog-body">Well, Sophia, with AI being integrated into everything these days, it would be a surprise if Spotify did NOT release this feature at some point. And I agree! The issue is...</p>
+            <div class="image-plus-desc">
+                <img class="blog-image" style="box-shadow: none;" src="./spoti-covers.png" alt="email rejecting request">
+                <p class="image-desc">Spotify's AI-generated playlist covers.</p>
+            </div>
+            <p class="blog-body">... these playlist covers generated by Spotify's BETA AI playlist feature look a little familiar...</p>
+            <div class="image-plus-desc">
+                <img class="blog-image" style="box-shadow: none;" src="./my-covers.png" alt="email rejecting request">
+                <p class="image-desc">soph.ai's AI-generated playlist covers.</p>
+            </div>
+            <p class="blog-body">I mean... you tell me.</p>
+            <p class="blog-body">
+                So, let's give Spotify and soph.ai the same prompt and see who does better: OpenAI's gpt-3.5-turbo model or Spotify's proprietary music recommendation AI. Let's step through each application to see how they work. The prompt:
+            </p>
+            <p class="blog-body" style="font-family: jetbrains mono; font-size: 18px;">john steinbeck, albatross fleetwood mac, rime of the mariner, cloudy coast, the sea of cortez, cannery row, norcal beach, san francisco, brandy you're a fine girl, pacifica, pescadero, monterey, slow, psychedelic, acoustic, ambient, 60s-70s, holy, spacious, long drawn out notes, gliding free above a raging sea, organic, fog rolls in</p>
+            <p class="blog-body" style="text-align: center; font-size: 28px;"><b>soph.ai vs. Spotify AI Playlists</b></p>
+            <div class="image-plus-desc">
+                <div class="spotify-book">
+                    <img class="spotify-image-small" src="./comparison/soph1.png" alt="ridge dome">
+                    <img class="spotify-image-small" src="./comparison/spot1.jpeg" alt="ridge dome">
+                </div>
+                <p class="image-desc">1) Meet the friendly playlist-making AIs. They ask for your ideas!</p>
+            </div>
+            <div class="image-plus-desc">
+                <div class="spotify-book">
+                    <img class="spotify-image-small" src="./comparison/soph2.png" alt="ridge dome">
+                    <img class="spotify-image-small" src="./comparison/spot2.png" alt="ridge dome">
+                </div>
+                <p class="image-desc">2) Enter text-based input.</p>
+            </div>
+            <div class="image-plus-desc">
+                <div class="spotify-book">
+                    <img class="spotify-image-small" src="./comparison/soph3.png" alt="ridge dome">
+                    <img class="spotify-image-small" src="./comparison/spot3.png" alt="ridge dome">
+                </div>
+                <p class="image-desc">3) Watch the spinny loading wheel while the AI works its magic.</p>
+            </div>
+            <div class="image-plus-desc">
+                <div class="spotify-book">
+                    <img class="spotify-image-small" src="./comparison/soph4.png" alt="ridge dome">
+                    <img class="spotify-image-small" src="./comparison/spot4.jpeg" alt="ridge dome">
+                </div>
+                <p class="image-desc">4) The playlists are generated! Spotify offers a refine your playlist feature (which I think is great, it gives the user more say which should always be encouraged).</p>
+            </div>
+            <div class="image-plus-desc">
+                <div class="spotify-book">
+                    <img class="spotify-image-small" src="./comparison/soph5.png" alt="ridge dome">
+                    <img class="spotify-image-small" src="./comparison/spot5.png" alt="ridge dome">
+                </div>
+                <p class="image-desc">5) The two-tone ombre cover art again and made-with-AI disclaimer descriptions.</p>
+            </div>
+            <p class="blog-body">
+                I think the similarities are pretty glaring: from the friend-coded AI and spinny loading wheel, to the two-tone ombre playlist cover with white font and playlist description. Of course, Spotify does it much better given their team of designers, developers, PM, and scrum master while I'm just me... but the refine your playlist feature was what I would've spent time implementing if Spotify had let soph.ai be a public application.
+            </p>
+            <p class="blog-body">
+                I can think of an alternate explanation for every similarity I see that is not "Spotify rejected my extension request then stole my idea" (yes, very improbable but you never know). Textbox/chat-style interfaces in AI applications are extremely common, largely due to the naturalness of two-way dialogue between user and 'bot', human and computer. An interesting internet search would be how the principles of <a class="borzoitest" href="https://sophiawliu.com/blog.phia/the-whole-earth-catablog/">cybernetics</a> are exployed in AI interface design. It's very possible that this blog post can be chalked up to convergent interface design evolution... pretty cool!
+            </p>
+            <p class="blog-body"></p>
+            <p class="blog-body">
+                Take a look at <a class="borzoitest" href="https://open.spotify.com/playlist/0KEk4PTItrzmZIFhyircsn?si=4d94f67e78a24275" target="_blank">"the foggy coast" by soph.ai</a> and <a class="borzoitest" href="https://open.spotify.com/playlist/6t57K17mHg1LzuiuleX5go?si=9e6a119402d549ea" target="_blank">"Seas of Sound" by Spotify AI</a>.
+            </p>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/0KEk4PTItrzmZIFhyircsn?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <p class="blog-body"></p>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6t57K17mHg1LzuiuleX5go?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <p class="blog-body"><br>
+                Though, of course, the real comparison should be between man-made playlists and AI-generated playlists, human creativity and computational creativity. To answer these big questions, we look to the work of the many investigators from all disciplines and their ongoing work!
+            </p>
+            <div class="backcontainer">
+                <a href="../" class="backpointer">☜</a><a class="back" href="../"> Back to blog index</a>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="contact">
+                <a href="mailto: sophiawliu@berkeley.edu" target="_blank">
+                    <div class="contact-image email"></div>
+                </a>
+                <a href="https://www.linkedin.com/in/sophiawliu/" target="_blank">
+                    <div class="contact-image linkedin"></div>
+                </a>
+                <a href="https://github.com/sophiawliu" target="_blank">
+                    <div class="contact-image github"></div>
+                </a>
+                <a href="https://open.spotify.com/user/uniponpeg?si=3d2258ef77b74a61" target="_blank">
+                    <div class="contact-image spotify"></div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -831,6 +831,17 @@ h1 {
     width: 32vw;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.233);
 }
+.spotify-book {
+    width: 54vw;
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    margin-bottom: 4vh;
+}
+.spotify-image-small {
+    width: 26vw;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.233);
+}
 @media screen and (max-width: 460px) {
     .haiku-book {
         width: 80vw;        
@@ -841,6 +852,17 @@ h1 {
     }
     .haiku-image-small {
         width: 80vw;
+    }
+    .spotify-book {
+        width: 80vw;
+        display: flex;
+        flex-direction: row;
+        gap: 2vw;
+        margin-bottom: 4vh;
+    }
+    .spotify-image-small {
+        width: 39vw;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.233);
     }
 }
 
