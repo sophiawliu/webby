@@ -116,7 +116,7 @@ body {
 /* NAVBAR */
 .navbar {
     display: flex;
-    gap: 28px;
+    gap: 30px;
     margin: 8vh 0 0 7vw;
     align-self: flex-start;
     position: sticky;
@@ -135,7 +135,7 @@ a {
     text-decoration: none;
 }
 li {
-    font-size: 20px;
+    font-size: 18px;
     rotate: -35deg;
     margin-left: -20px;
 }
@@ -155,7 +155,7 @@ li {
 }
 .active {
     font-family: swungnote;
-    font-size: 20px;
+    font-size: 18px;
 }
 a:hover {
     color: #00aede;
@@ -406,11 +406,11 @@ h2 {
         transition: all .2s linear;
     }
     li {
-        font-size: 12px;
+        font-size: 14px;
         rotate: 0deg;
     }
     .active {
-        font-size: 12px;
+        font-size: 14px;
     }
     .cardinfo {
         display: flex;
@@ -729,7 +729,7 @@ video {
     font-weight: lighter;
     list-style-position: inside;
     flex-direction: column;
-    margin-left: 16px;
+    margin-left: 20px;
     margin-bottom: 8vh;
 }
 .blog-entry {
@@ -739,7 +739,7 @@ video {
     font-size: 24px;
 }
 .date {
-    font-size: 15px;
+    font-size: 18px;
 }
 
 /* blog page */
@@ -842,6 +842,12 @@ h1 {
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.233);
 }
 @media screen and (max-width: 460px) {
+    .blog-entry {
+        font-size: 18px;
+    }
+    .date {
+        font-size: 12px;
+    }
     .haiku-book {
         width: 80vw;        
         display: flex;
