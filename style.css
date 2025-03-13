@@ -10,7 +10,12 @@ body {
 
 /* HOME */
 .homepage {
-    border: 3vw solid #e33900;
+    border-top: 3vw solid #e33900;
+    border-left: 3vw solid #0066e3;
+    border-right: 3vw solid #ffd000;
+    border-bottom: 3vw solid #00aede;
+
+    /* border: 3vw solid #e33900; */
     position: absolute;
     top:0;
     bottom: 0;
@@ -186,7 +191,10 @@ a:hover {
 
 /* WORK */
 .page {
-    border: 3vw solid #e33900;
+    border-top: 3vw solid #e33900;
+    border-left: 3vw solid #0066e3;
+    border-right: 3vw solid #ffd000;
+    border-bottom: 3vw solid #00aede;
     position: absolute;
     left: 0;
     right: 0;
@@ -619,7 +627,10 @@ video {
     margin-top: 5px;
 }
 .sophaipage {
-    border: 3vw solid #e33900;
+    border-top: 3vw solid #e33900;
+    border-left: 3vw solid #0066e3;
+    border-right: 3vw solid #ffd000;
+    border-bottom: 3vw solid #00aede;
     position: absolute;
     left: 0;
     right: 0;
@@ -731,7 +742,10 @@ video {
 
 /* blog index */
 .blogindex {
-    border: 3vw solid #e33900;
+    border-top: 3vw solid #e33900;
+    border-left: 3vw solid #0066e3;
+    border-right: 3vw solid #ffd000;
+    border-bottom: 3vw solid #00aede;
     position: absolute;
     top: 0;
     left: 0;
@@ -766,7 +780,10 @@ video {
 
 /* blog page */
 .blogpage {
-    border: 3vw solid #e33900;
+    border-top: 3vw solid #e33900;
+    border-left: 3vw solid #0066e3;
+    border-right: 3vw solid #ffd000;
+    border-bottom: 3vw solid #00aede;
     position: absolute;
     top:0;
     left: 0;
