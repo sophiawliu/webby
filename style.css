@@ -10,10 +10,10 @@ body {
 
 /* HOME */
 .homepage {
-    border-top: 3vw solid #e33900;
-    border-left: 3vw solid #0066e3;
-    border-right: 3vw solid #ffd000;
-    border-bottom: 3vw solid #00aede;
+    border-top: 3vw solid #ffd000;
+    border-left: 3vw solid #e33900;
+    border-right: 3vw solid #00aede;
+    border-bottom: 3vw solid #0066e3;
 
     /* border: 3vw solid #e33900; */
     position: absolute;
@@ -191,10 +191,10 @@ a:hover {
 
 /* WORK */
 .page {
-    border-top: 3vw solid #e33900;
-    border-left: 3vw solid #0066e3;
-    border-right: 3vw solid #ffd000;
-    border-bottom: 3vw solid #00aede;
+    border-top: 3vw solid #ffd000;
+    border-left: 3vw solid #e33900;
+    border-right: 3vw solid #00aede;
+    border-bottom: 3vw solid #0066e3;
     position: absolute;
     left: 0;
     right: 0;
@@ -627,10 +627,10 @@ video {
     margin-top: 5px;
 }
 .sophaipage {
-    border-top: 3vw solid #e33900;
-    border-left: 3vw solid #0066e3;
-    border-right: 3vw solid #ffd000;
-    border-bottom: 3vw solid #00aede;
+    border-top: 3vw solid #ffd000;
+    border-left: 3vw solid #e33900;
+    border-right: 3vw solid #00aede;
+    border-bottom: 3vw solid #0066e3;
     position: absolute;
     left: 0;
     right: 0;
@@ -742,10 +742,10 @@ video {
 
 /* blog index */
 .blogindex {
-    border-top: 3vw solid #e33900;
-    border-left: 3vw solid #0066e3;
-    border-right: 3vw solid #ffd000;
-    border-bottom: 3vw solid #00aede;
+    border-top: 3vw solid #ffd000;
+    border-left: 3vw solid #e33900;
+    border-right: 3vw solid #00aede;
+    border-bottom: 3vw solid #0066e3;
     position: absolute;
     top: 0;
     left: 0;
@@ -780,10 +780,10 @@ video {
 
 /* blog page */
 .blogpage {
-    border-top: 3vw solid #e33900;
-    border-left: 3vw solid #0066e3;
-    border-right: 3vw solid #ffd000;
-    border-bottom: 3vw solid #00aede;
+    border-top: 3vw solid #ffd000;
+    border-left: 3vw solid #e33900;
+    border-right: 3vw solid #00aede;
+    border-bottom: 3vw solid #0066e3;
     position: absolute;
     top:0;
     left: 0;
