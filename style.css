@@ -56,6 +56,23 @@ body {
     background-color: #ffd000;
     color: #e33900;
 }
+.borzois:hover {
+    background-color: #e33900;
+    color: #ffd000;
+    transition: all .2s linear;
+}
+.desdev:hover {
+    color: #00aede;
+    transition: all .2s linear;
+}
+.desdev:hover .star {
+    color: #ffd000;
+    transition: all .2s linear;
+}
+.star {
+    color: #e33900;
+}
+
 
 .contact {
     display: flex;
