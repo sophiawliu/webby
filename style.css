@@ -38,7 +38,7 @@ body {
     font-weight: lighter;
     margin-right: 5px;
 }
-.sophialiu:hover {
+.intro:hover .sophialiu {
     color: #e33900;
     text-shadow: #ffd000 2.5px 2.5px;
     transition: all .2s linear;
@@ -56,17 +56,17 @@ body {
     background-color: #ffd000;
     color: #e33900;
 }
-.borzois:hover {
+.introsmall:hover .borzois {
     background-color: #e33900;
     color: #ffd000;
     transition: all .2s linear;
 }
-.desdev:hover {
-    color: #00aede;
+.intro:hover .desdev {
+    color: #e33900;
     transition: all .2s linear;
 }
-.desdev:hover .star {
-    color: #ffd000;
+.intro:hover .star {
+    color: #0066e3;
     transition: all .2s linear;
 }
 .star {
