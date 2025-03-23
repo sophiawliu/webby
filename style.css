@@ -1,3 +1,12 @@
+/* Preload hover icons */
+.preload-images {
+    background-image: url(./media/contact/email-hover.png), 
+                      url(./media/contact/linkedin-hover.png),
+                      url(./media/contact/github-hover.png),
+                      url(./media/contact/spotify-hover.png);
+    display: none;
+}
+
 body {
     margin: 10vh 10vw;
     color: #0066e3;
