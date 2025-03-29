@@ -828,6 +828,20 @@ h1 {
     margin-bottom: 5vh;
 }
 
+.blog-body-bcourses {
+    /* letter-spacing: 0.2; */
+    color: #2a2a2a;
+    font-family: bc sans;
+    font-size: 16px;
+    margin-bottom: 5vh;
+}
+.blog-body-bcourses-bold {
+    /* letter-spacing: 0.2; */
+    color: #2a2a2a;
+    font-family: bc sans bold;
+    font-size: 16px;
+    margin-bottom: 5vh;
+}
 @media screen and (max-width: 430px) {
     .inprogress {
         margin-top:4vh;
@@ -945,7 +959,14 @@ h1 {
     font-family: windsor;
     src: url(./media/fonts/Windsor\ Regular.ttf);
 }
-
+@font-face {
+    font-family: bc sans;
+    src: url(./media/fonts/2023_01_01_BCSans-Regular_2f.ttf);
+}
+@font-face {
+    font-family: bc sans bold;
+    src: url(./media/fonts/2023_01_01_BCSans-Bold_2f.ttf);
+}
 ::-moz-selection { /* Code for Firefox */
     background: #ffd000;
     color:#e33900;
