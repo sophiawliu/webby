@@ -7,82 +7,6 @@
     display: none;
 }
 
-/* Gradient border blur effect */
-.gradient-border-blur {
-    position: relative;
-    border-radius: 20px; /* Rounded corners for smoother blending */
-    background: linear-gradient(45deg, #ffd000, #e33900, #00aede, #0066e3, #ffd000);
-    background-size: 400% 400%;
-    animation: gradientShift 3s ease infinite;
-    padding: 3vw;
-}
-
-.gradient-border-blur::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border-radius: 20px;
-    background: white; /* or your page background color */
-    margin: 3px;
-    z-index: -1;
-}
-
-@keyframes gradientShift {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
-
-/* Alternative: Static gradient border with blur */
-.gradient-border-static {
-    position: relative;
-    border-radius: 15px;
-    background: linear-gradient(45deg, #ffd000 0%, #e33900 25%, #00aede 50%, #0066e3 75%, #ffd000 100%);
-    padding: 3vw;
-    filter: blur(1px);
-}
-
-.gradient-border-static::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border-radius: 15px;
-    background: white;
-    margin: 2px;
-    z-index: -1;
-}
-
-/* Soft gradient corners */
-.soft-gradient-corners {
-    position: relative;
-    border-radius: 25px;
-    background: 
-        radial-gradient(circle at top left, #ffd000 0%, transparent 50%),
-        radial-gradient(circle at top right, #e33900 0%, transparent 50%),
-        radial-gradient(circle at bottom right, #00aede 0%, transparent 50%),
-        radial-gradient(circle at bottom left, #0066e3 0%, transparent 50%);
-    padding: 3vw;
-}
-
-.soft-gradient-corners::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border-radius: 25px;
-    background: white;
-    margin: 3px;
-    z-index: -1;
-}
-
 body {
     margin: 10vh 10vw;
     color: #0066e3;
@@ -142,7 +66,7 @@ body {
     /* letter-spacing: 1px; */
 }
 .borzois {
-    color: #00aede;
+    font-family: swungnote;
     font-weight: bold;
 }
 .introsmall:hover .borzois {
