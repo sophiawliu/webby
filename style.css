@@ -142,12 +142,12 @@ body {
     /* letter-spacing: 1px; */
 }
 .borzois {
-    background-color: #ffd000;
-    color: #e33900;
+    color: #00aede;
+    font-weight: bold;
 }
 .introsmall:hover .borzois {
-    background-color: #e33900;
-    color: #ffd000;
+    color: #e33900;
+    text-shadow: #ffd000 1px 1px;
     transition: all .2s linear;
 }
 .intro:hover .desdev {
@@ -168,7 +168,7 @@ body {
     gap: 10px;
     font-size: 16px;
     font-weight: bold;
-    margin-top: 10px;
+    margin-top: 15px;
     margin-bottom: 20px;
 }
 
@@ -395,6 +395,7 @@ h2 {
     .cardinfo {
         width: 80vw;
     }
+    
 }
 
 
@@ -506,6 +507,15 @@ h2 {
         text-shadow: #ffd000 1.5px 1.5px;
         transition: all .2s linear;
     }
+    .intro {
+        font-size: 22px;
+    }
+    .introsmall {
+        font-size: 18px;
+    }
+    .thingsworkedon {
+        font-size: 18px;
+    }
     .navbar {
         margin: 6vh 0 0 7vw;
         top: 4vh;
@@ -583,10 +593,6 @@ h2 {
     }
     .borzoitest {
         font-weight: bold;
-    }
-    .thingsworkedon {
-        font-weight: bold;
-        font-size: 22px;
     }
 }
 
