@@ -518,6 +518,14 @@ h2 {
     .borzoitest {
         font-weight: bold;
     }
+    /* Fix blog index margins for mobile */
+    .blogbar {
+        margin: 0 0 0 5vw;
+        width: 90vw;
+    }
+    .informal-entries {
+        margin-left: 5vw;
+    }
 }
 
 
@@ -784,7 +792,7 @@ video {
     font-weight: lighter;
     list-style-position: inside;
     flex-direction: column;
-    margin-left: 7vw;
+    margin-left: 20px;
     margin-bottom: 8vh;
 }
 .blog-entry {
