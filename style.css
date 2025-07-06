@@ -784,7 +784,7 @@ video {
     font-weight: lighter;
     list-style-position: inside;
     flex-direction: column;
-    margin-left: 20px;
+    margin-left: 7vw;
     margin-bottom: 8vh;
 }
 .blog-entry {
