@@ -375,39 +375,16 @@ h2 {
     border-top: 5px dashed #e33900;
     margin-bottom: 100px;
 }
-/* contact images */
-.contact-image {
+/* contact icons */
+.contact-icon {
     width: 21px;
     height: 21px;
-    background-size: contain;
-}
-.email {
-    background-image: url(./media/contact/email.png);
-}
-.linkedin {
-    background-image: url(./media/contact/linkedin.png);
-}
-.github {
-    background-image: url(./media/contact/github.png);
-}
-.spotify {
-    background-image: url(./media/contact/spotify.png);
-}
-.email:hover {
-    background-image: url(./media/contact/email-hover.png);
+    fill: #0066e3;
     transition: all .2s linear;
 }
-.linkedin:hover {
-    background-image: url(./media/contact/linkedin-hover.png);
-    transition: all .2s linear;
-}
-.github:hover {
-    background-image: url(./media/contact/github-hover.png);
-    transition: all .2s linear;
-}
-.spotify:hover {
-    background-image: url(./media/contact/spotify-hover.png);
-    transition: all .2s linear;
+
+.contact-icon:hover {
+    fill: #00aede;
 }
 
 /* FOR PHONES */
