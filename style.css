@@ -381,6 +381,12 @@ h2 {
     border-top: 5px dashed #e33900;
     margin-bottom: 100px;
 }
+/* Twitter embeds */
+.twitter-tweet {
+    margin: 0 auto;
+    display: block;
+}
+
 /* contact icons */
 .contact-icon {
     width: 21px;
