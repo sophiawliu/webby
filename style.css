@@ -457,26 +457,6 @@ h2 {
     .active {
         font-size: 14px;
     }
-}
-
-/* FOR SMALL PHONES (regular iPhones, etc.) */
-@media screen and (max-width: 414px) {
-    .navbar {
-        margin: 5vh 0 0 6vw;
-        gap: 25px;
-    }
-    .swl {
-        font-size: 38px;
-        text-shadow: #0066e3 1.2px 1.2px;
-    }
-    li {
-        font-size: 13px;
-        margin-right: 9px;
-    }
-    .active {
-        font-size: 13px;
-    }
-}
     .cardinfo {
         display: flex;
         flex-direction: column;
@@ -537,6 +517,26 @@ h2 {
     .informal-entries {
         margin-left: 0;
     }
+}
+
+/* FOR SMALL PHONES (regular iPhones, etc.) */
+@media screen and (max-width: 414px) {
+    .navbar {
+        margin: 5vh 0 0 6vw;
+        gap: 25px;
+    }
+    .swl {
+        font-size: 38px;
+        text-shadow: #0066e3 1.2px 1.2px;
+    }
+    li {
+        font-size: 13px;
+        margin-right: 9px;
+    }
+    .active {
+        font-size: 13px;
+    }
+
 }
 
 
