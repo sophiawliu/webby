@@ -615,7 +615,7 @@ video {
 @media screen and (max-width: 480px) {
     .projtitle.wvc {
         font-family: windsor;
-        font-size: 30px;
+        font-size: 55px;
     }
     .blog-heading {
         font-size: 36px;
