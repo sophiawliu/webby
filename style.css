@@ -1277,6 +1277,22 @@ h1 {
     box-shadow: 0 0 0 2px rgba(0, 102, 227, 0.3);
 }
 
+/* Rainbow ombre background when color sorting is selected */
+.sort-dropdown.rainbow-bg {
+    background: linear-gradient(135deg, 
+        #ffb3ba 0%,    /* pastel red */
+        #ffdfba 16%,   /* pastel orange */
+        #ffffba 32%,   /* pastel yellow */
+        #baffc9 48%,   /* pastel green */
+        #bae1ff 64%,   /* pastel blue */
+        #e6baff 80%,   /* pastel purple */
+        #f0f0f0 100%   /* light grey */
+    );
+    color: #0066e3;
+    font-weight: normal;
+    border: none;
+}
+
 /* Display options */
 .display-container {
     display: flex;
