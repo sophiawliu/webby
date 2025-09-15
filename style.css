@@ -39,6 +39,56 @@ body {
     align-items: left;
     gap: 5px;
 }
+
+.homepage-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 2.5vw;
+}
+
+.profile-image {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+}
+
+.sticker-image {
+    display: absolute;
+    margin-left: 3px;
+    vertical-align: -40%;
+    position: relative;
+}
+
+.sticker-image img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15), 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    rotate: -40deg;
+    filter: grayscale(100%);
+}
+
+.sticker-image:hover img {
+    rotate: 0deg;
+    filter: none;
+}
+
+.text-content:hover .sticker-image img {
+    rotate: 0deg;
+    filter: none;
+}
+
+
+.intro {
+    position: relative;
+}
+
+.text-content {
+    flex: 1;
+}
 .intro {
     font-size: 26px;
     font-weight: bold;
@@ -94,6 +144,7 @@ body {
     font-weight: bold;
     margin-top: 15px;
     margin-bottom: 20px;
+    align-items: flex-start;
 }
 
 .nextpage {
@@ -399,8 +450,63 @@ h2 {
     fill: #00aede;
 }
 
+/* RESPONSIVE HOMEPAGE */
+@media screen and (max-width: 900px) {
+    .homepage-content {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        gap: 2vh;
+    }
+    
+}
+
+/* Move sticker above text on small screens */
+@media screen and (max-width: 600px) {
+    .sticker-image {
+        position: absolute;
+        top: -80px;
+        left: 0;
+        display: block;
+        margin: 0;
+    }
+    
+    .sticker-image img {
+        filter: none;
+    }
+}
+
 /* FOR PHONES */
 @media screen and (max-width: 460px) {
+    .homepage-content {
+        gap: 1.5vh;
+    }
+    
+    .profile-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    
+    .profile-image img {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .intro-section-mobile {
+        display: flex;
+        align-items: flex-start;
+        gap: 15px;
+        margin-left: 100px;
+    }
+    
+    .intro-text-mobile {
+        flex: 1;
+    }
+    
+    .introsmall {
+        margin-top: 10px;
+    }
     .blog-image {
         width: 80vw;
     }
