@@ -472,7 +472,7 @@ h2 {
     }
     
     .sticker-image img {
-        filter: none;
+        filter: grayscale(100%);
     }
 }
 
@@ -480,6 +480,11 @@ h2 {
 @media screen and (max-width: 460px) {
     .homepage-content {
         gap: 1.5vh;
+    }
+    
+    /* Reduce spacing between "I'm a" and "I'm exploring" on mobile */
+    .homepage-content div[style*="height: 8px"] {
+        height: 4px !important;
     }
     
     .profile-image {
