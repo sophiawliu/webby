@@ -1336,10 +1336,12 @@ h1 {
     font-family: jetbrains mono;
 }
 
-.display-options {
-    display: flex;
-    gap: 8px;
-}
+    .display-options {
+        display: flex;
+        gap: 8px;
+        width: 100%;
+        justify-content: stretch;
+    }
 
 .display-btn {
     display: flex;
@@ -1379,12 +1381,14 @@ h1 {
         flex-direction: column;
         align-items: center;
         gap: 15px;
+        width: 100%;
     }
     
     .sort-container, .display-container {
         flex-direction: column;
         align-items: center;
         gap: 8px;
+        width: 100%;
     }
     
     .sort-dropdown {
@@ -1392,14 +1396,14 @@ h1 {
         padding: 8px 10px;
         height: 40px;
         width: 100%;
-        max-width: 280px;
+        max-width: none;
     }
     
     .display-btn {
         font-size: 14px;
         padding: 8px 10px;
         height: 40px;
-        min-width: 80px;
+        flex: 1;
     }
     
     .display-options {
@@ -1449,5 +1453,10 @@ h1 {
     .album-grid.large {
         grid-template-columns: 1fr;
         gap: 15px;
+    }
+    
+    /* Disable hover popups on mobile */
+    .album-cover:hover .album-popup {
+        display: none;
     }
 }
