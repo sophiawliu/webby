@@ -1015,6 +1015,35 @@ h1 {
 }
 
 .album-grid.small {
+    grid-template-columns: repeat(10, 1fr);
+    gap: 8px;
+}
+
+.album-grid.small .album-popup {
+    font-size: 10px;
+    padding: 4px 6px;
+    line-height: 1.2;
+}
+
+.album-grid.small .album-popup .song-title,
+.album-grid.small .album-popup .artist-name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    margin-bottom: 2px;
+}
+
+.album-grid.small .album-popup .added-date {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    font-size: 8px;
+    margin-bottom: 0;
+}
+
+.album-grid.medium {
     grid-template-columns: repeat(6, 1fr);
     gap: 12px;
 }
@@ -1386,6 +1415,11 @@ h1 {
     }
     
     .album-grid.small {
+        grid-template-columns: repeat(6, 1fr);
+        gap: 6px;
+    }
+    
+    .album-grid.medium {
         grid-template-columns: repeat(4, 1fr);
         gap: 10px;
     }
@@ -1403,6 +1437,11 @@ h1 {
     }
     
     .album-grid.small {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 4px;
+    }
+    
+    .album-grid.medium {
         grid-template-columns: repeat(3, 1fr);
         gap: 8px;
     }

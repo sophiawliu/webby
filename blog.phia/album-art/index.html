@@ -49,7 +49,7 @@
                     <select id="sort-select" class="sort-dropdown">
                         <option value="date-added">date added (newest first)</option>
                         <option value="date-added-oldest">date added (oldest first)</option>
-                        <option value="color">🪄 color 🌈</option>
+                        <option value="color">🌈 COLOR 🪄</option>
                         <option value="album-date">album release date (newest first)</option>
                         <option value="album-date-oldest">album release date (oldest first)</option>
                         <option value="album-title">album title (a-z)</option>
@@ -61,14 +61,35 @@
                 <div class="display-container">
                     <label class="display-label"><strong>display:</strong></label>
                     <div class="display-options">
-                        <button id="display-small" class="display-btn active" data-size="small">
+                        <button id="display-small" class="display-btn" data-size="small">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <rect x="2" y="2" width="4" height="4"/>
+                                <rect x="8" y="2" width="4" height="4"/>
+                                <rect x="14" y="2" width="4" height="4"/>
+                                <rect x="20" y="2" width="2" height="4"/>
+                                <rect x="2" y="8" width="4" height="4"/>
+                                <rect x="8" y="8" width="4" height="4"/>
+                                <rect x="14" y="8" width="4" height="4"/>
+                                <rect x="20" y="8" width="2" height="4"/>
+                                <rect x="2" y="14" width="4" height="4"/>
+                                <rect x="8" y="14" width="4" height="4"/>
+                                <rect x="14" y="14" width="4" height="4"/>
+                                <rect x="20" y="14" width="2" height="4"/>
+                                <rect x="2" y="20" width="4" height="2"/>
+                                <rect x="8" y="20" width="4" height="2"/>
+                                <rect x="14" y="20" width="4" height="2"/>
+                                <rect x="20" y="20" width="2" height="2"/>
+                            </svg>
+                            small
+                        </button>
+                        <button id="display-medium" class="display-btn active" data-size="medium">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
                                 <rect x="3" y="3" width="7" height="7"/>
                                 <rect x="14" y="3" width="7" height="7"/>
                                 <rect x="3" y="14" width="7" height="7"/>
                                 <rect x="14" y="14" width="7" height="7"/>
                             </svg>
-                            small
+                            medium
                         </button>
                         <button id="display-large" class="display-btn" data-size="large">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
@@ -161,7 +182,7 @@
         
         let accessToken = null;
         let allTracks = []; // Store all tracks for sorting
-        let currentDisplaySize = 'small'; // Default display size
+        let currentDisplaySize = 'medium'; // Default display size
 
         // Get access token using Client Credentials flow
         async function getAccessToken() {
@@ -436,7 +457,7 @@
             grid.innerHTML = '';
             
             // Remove existing size classes
-            grid.classList.remove('small', 'large');
+            grid.classList.remove('small', 'medium', 'large');
             
             // Add new size class
             grid.classList.add(displaySize);
@@ -536,7 +557,7 @@
                     // Toggle rainbow background for color sorting
                     if (e.target.value === 'color') {
                         e.target.classList.add('rainbow-bg');
-                        // Set display size to small for color sorting
+                        // Set display size to small for color sorting (best for rainbow effect)
                         currentDisplaySize = 'small';
                         // Update display buttons to reflect small selection
                         document.querySelectorAll('.display-btn').forEach(btn => btn.classList.remove('active'));
