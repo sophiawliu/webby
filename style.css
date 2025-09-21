@@ -64,7 +64,7 @@ body {
     height: 60px;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid white;
+    border: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15), 0 1px 3px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
     rotate: -40deg;
@@ -475,6 +475,7 @@ h2 {
         filter: grayscale(100%);
     }
 }
+
 
 /* FOR PHONES */
 @media screen and (max-width: 460px) {
@@ -917,10 +918,118 @@ video {
     margin-bottom: 8vh;
 }
 .blog-entry {
-    margin-bottom: 44px;
+    margin-bottom: 0px;
     display: flex;
+    align-items: center;
+    gap: 10px;
     rotate: 0deg;
     font-size: 24px;
+    transition: all 0.2s ease;
+    padding: 8px;
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+}
+
+.blog-preview {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    flex-shrink: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15), 0 1px 3px rgba(0, 0, 0, 0.1);
+    align-self: flex-start;
+    transform: rotate(-8deg);
+    transition: transform 0.3s ease;
+}
+
+.blog-preview:nth-child(2) {
+    transform: rotate(5deg);
+}
+
+.blog-preview:nth-child(3) {
+    transform: rotate(-12deg);
+}
+
+.blog-preview:nth-child(4) {
+    transform: rotate(3deg);
+}
+
+.blog-preview:nth-child(5) {
+    transform: rotate(-6deg);
+}
+
+.blog-preview:nth-child(6) {
+    transform: rotate(8deg);
+}
+
+.blog-preview:nth-child(7) {
+    transform: rotate(-4deg);
+}
+
+.blog-preview:nth-child(8) {
+    transform: rotate(7deg);
+}
+
+.blog-preview:nth-child(9) {
+    transform: rotate(-9deg);
+}
+
+.blog-entry:hover .blog-preview {
+    transform: rotate(0deg);
+}
+
+.blog-number {
+    font-family: windsor;
+    font-size: 60px;
+    font-weight: normal;
+    color: #0066e3;
+    line-height: 1;
+    margin-right: 20px;
+    flex-shrink: 0;
+    transition: opacity 0.2s ease;
+}
+
+.blog-hover-image {
+    position: absolute;
+    left: 8px;
+    top: 8px;
+    height: calc(100% - 16px);
+    width: auto;
+    max-height: calc(100% - 16px);
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    aspect-ratio: 1;
+    object-position: center;
+}
+
+
+.blog-entry:hover .blog-number {
+    opacity: 0;
+}
+
+.blog-entry:hover .blog-hover-image {
+    opacity: 1;
+}
+
+.blog-entry:not(:has(.blog-hover-image)):hover .blog-number {
+    opacity: 1;
+    color: white;
+}
+
+.blog-content {
+    flex: 1;
+}
+
+.blog-entry:not(:has(.blog-preview)) {
+    min-height: 100px;
+    align-items: center;
+}
+
+.blog-entry:hover {
+    background: #0066e3;
+    color: white;
 }
 .date {
     font-size: 18px;
