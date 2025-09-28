@@ -519,6 +519,11 @@ h2 {
     .image-desc {
         width: 80vw;
     }
+    
+    /* Make 30vw images full width on mobile */
+    .blog-image[style*="width: 30vw"] {
+        width: 80vw !important;
+    }
     .sophialiu {
         font-family: swungnote;
         font-size: 44px;
@@ -619,6 +624,9 @@ h2 {
         font-weight: bold;
     }
     .borzoitest {
+        text-decoration: none;
+        border-bottom: 2px solid #00aede;
+        padding-bottom: 1px;
         font-weight: bold;
     }
     /* Fix blog index margins for mobile */
@@ -857,8 +865,9 @@ video {
     font-size: 20px;
 }
 .borzoitest {
-    text-decoration: underline 2px #00aede;
-    text-underline-offset: 3px;
+    text-decoration: none;
+    border-bottom: 2px solid #00aede;
+    padding-bottom: 1px;
     font-weight: bold;
 }
 .borzoitest:hover {
