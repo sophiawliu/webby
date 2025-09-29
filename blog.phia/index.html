@@ -20,9 +20,18 @@
             </ul>
         </div>
 
-        <h2>Thanks for being here!</h2>
-
         <div class="blogbar">
+            <h2>Blog.phia</h2>
+            <p class="rec-label">Welcome! I hope you take a look at my favorite posts:<br><a class="borzoitest" href="./bad-vibes/">Vibe Study ���: Bad Vibes?</a> and <a class="borzoitest" href="./the-whole-earth-catablog/">🌎 The Whole Earth CataBlog 🌐</a>.</p><br>
+            <div class="controls-container" style="margin-top: 20px;">
+                <div class="sort-container">
+                    <select id="blog-sort" class="sort-dropdown">
+                        <option value="newest" selected>newest → oldest</option>
+                        <option value="oldest">oldest → newest</option>
+                        <option value="recently-updated">most recently updated</option>
+                    </select>
+                </div>
+            </div>
             <div class="informal-entries">
                 <div class="blog-entry"><a href="./bad-vibes/"><b>Vibe Study ���: Bad Vibes?</b><br><span class="date">9/27/2025</span></a></div>
                 <div class="blog-entry"><a href="./album-art/"><b>My #Fav Album Art</b><br><span class="date">9/14/2025 ~ auto-updating ♾️</span></a></div>
@@ -37,7 +46,7 @@
             </div>
         </div>
 
-        <div class="gap" style="height: 10px;"></div>
+        <div class="gap" style="height: 40px;"></div>
 
         <div class="footer">
             <div class="contact">
@@ -69,6 +78,52 @@
             </div>
         </div>
     </div>
+
+    <script>
+        (function () {
+            function parseDates(text) {
+                const regex = /(\d{1,2})\/(\d{1,2})\/(\d{4})/g;
+                let match;
+                const stamps = [];
+                while ((match = regex.exec(text)) !== null) {
+                    const month = parseInt(match[1], 10) - 1;
+                    const day = parseInt(match[2], 10);
+                    const year = parseInt(match[3], 10);
+                    stamps.push(new Date(year, month, day).getTime());
+                }
+                const original = stamps.length > 0 ? stamps[0] : 0;
+                const updated = stamps.length > 1 ? stamps[stamps.length - 1] : original;
+                return { original, updated };
+            }
+
+            function sortEntries(order) {
+                const container = document.querySelector('.informal-entries');
+                if (!container) return;
+                const items = Array.from(container.querySelectorAll('.blog-entry'));
+                const keyed = items.map(el => {
+                    const dateEl = el.querySelector('.date');
+                    const dateText = dateEl ? dateEl.textContent : '';
+                    const { original, updated } = parseDates(dateText);
+                    return { el, original, updated };
+                });
+                keyed.sort((a, b) => {
+                    if (order === 'oldest') return a.original - b.original;
+                    if (order === 'recently-updated') return b.updated - a.updated;
+                    return b.original - a.original;
+                });
+                keyed.forEach(({ el }) => container.appendChild(el));
+            }
+
+            document.addEventListener('DOMContentLoaded', function () {
+                const select = document.getElementById('blog-sort');
+                if (!select) return;
+                sortEntries('newest');
+                select.addEventListener('change', function () {
+                    sortEntries(this.value);
+                });
+            });
+        })();
+    </script>
 
 </body>
 </html>

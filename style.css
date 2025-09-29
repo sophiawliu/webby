@@ -351,11 +351,20 @@ a:hover {
     height: 100%;
 }
 h2 {
-    font-size: 28px;
+    font-size: 60px;
+    font-family: windsor;
     margin: 5vh 0 0 7vw;
     font-weight: regular;
     width: 82vw;
 }
+.rec-label {
+    font-size: 22px;
+    margin: 10px 0 0 7vw;
+    width: 82vw;
+    font-family: urbanist;
+    font-weight: normal;
+}
+
 
 @media screen and (max-width: 768px) {
     .board {
@@ -916,31 +925,102 @@ video {
     margin: auto;
 }
 .blogbar {
-    margin: 0 0 0 7vw;
+    margin: 0 auto;
     font-size: 20px;
     font-weight: bold;
     font-family: jetbrains mono;
     width: 80vw;
 }
+.blogindex h2 {
+    text-align: center;
+    margin: 5vh auto 0 auto;
+    width: 80vw;
+}
+.page h2 {
+    text-align: center;
+    margin: 5vh auto 0 auto;
+}
+.rec-label {
+    text-align: center;
+    margin: 10px auto 0 auto;
+    width: 80vw;
+    font-weight: normal;
+}
+
+/* Keep links inside rec-label bold */
+.rec-label .borzoitest {
+    font-weight: bold;
+}
+
 .informal-entries {
     margin-top: 5vh;
     font-family: jetbrains mono;
     font-weight: lighter;
     display: flex;
     flex-direction: column;
+    align-items: center; /* center children to allow symmetric snake */
     margin-bottom: 8vh;
 }
 .blog-entry {
-    margin-bottom: 44px;
+    margin-bottom: 54px;
     display: flex;
     rotate: 0deg;
     font-size: 24px;
+}
+
+/* Reset snaking: straight vertical list */
+.informal-entries .blog-entry { transform: none; }
+
+/* Disable staggering on small screens */
+@media screen and (max-width: 600px) {
+    .informal-entries .blog-entry { transform: none; }
+    /* Left-align titles and dates on mobile */
+    .blog-entry a { align-items: flex-start; text-align: left; }
+    .blog-entry b { text-align: left; }
+    .blog-entry .date { text-align: left; }
+}
+
+/* Larger blog titles on index */
+.blog-entry b {
+    font-size: 28px;
+    display: block;
+    text-align: center;
 }
 
 
 .date {
     font-size: 18px;
 }
+
+/* Use Urbanist font for blog index titles and dates */
+.informal-entries .blog-entry b {
+    font-family: urbanist;
+}
+.informal-entries .date {
+    font-family: jetbrains mono;
+}
+
+/* Center date under title on blog index */
+.blog-entry .date {
+    display: block;
+    text-align: center;
+}
+/* Ensure title and date stack and center together */
+.blog-entry a {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+/* Remove extra break spacing between title and date and control gap explicitly */
+.blog-entry a br {
+    display: none;
+}
+.blog-entry .date {
+    margin-top: 6px;
+}
+
+/* Two-column blog index on wide screens (disabled: revert to single column) */
 
 /* blog page */
 .blogpage {
@@ -1060,10 +1140,13 @@ h1 {
 }
 @media screen and (max-width: 460px) {
     .blog-entry {
-        font-size: 18px;
+        font-size: 22px;
+    }
+    .blog-entry b {
+        font-size: 26px;
     }
     .date {
-        font-size: 12px;
+        font-size: 18px;
     }
     .haiku-book {
         width: 80vw;        
@@ -1425,6 +1508,27 @@ h1 {
     font-weight: normal;
     height: 36px;
     box-sizing: border-box;
+}
+
+/* Blog index sort dropdown: match label size and keep compact width */
+#blog-sort.sort-dropdown {
+    font-size: 16px;
+    font-weight: normal;
+    width: 240px;
+    text-align: center;           /* center in Safari */
+    text-align-last: center;      /* center in Chrome/Firefox */
+    color: #0066e3;
+    border-color: #0066e3;
+}
+
+@media screen and (max-width: 768px) {
+    #blog-sort.sort-dropdown {
+        width: 100%;
+    }
+}
+
+#blog-sort.sort-dropdown option {
+    text-align: center;
 }
 
 .sort-dropdown:focus {
