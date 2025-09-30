@@ -846,10 +846,16 @@ video {
     transition: all .1s linear;
 }
 .projtitle {
-    margin: 0 0 0.5vh 0;
+    margin: -2px 0 0.5vh 0;
     font-family: jetbrains mono;
     font-weight: bold;
     font-size: 48px;
+}
+.projyear {
+    font-family: jetbrains mono;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 0 0 0;
 }
 .projsubtitle {
     margin-bottom: 3vh;
