@@ -131,7 +131,7 @@ body {
 }
 .introsmall:hover .borzois {
     color: #e33900;
-    text-shadow: #ffd000 1px 1px;
+    background-color: #ffd000;
     transition: all .2s linear;
 }
 .intro:hover .desdev {
