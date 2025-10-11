@@ -46,6 +46,11 @@
             </div>
         </div>
 
+        <!-- Starship Image Carousel -->
+        <div class="starship-carousel" style="text-align: center; margin: 0 0 80px 0;">
+            <img id="starship-image" src="../media/imgs/starship1.jpg" alt="Starship" style="max-width: 200px; height: auto; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+        </div>
+
         <div class="gap" style="height: 40px;"></div>
 
         <div class="footer">
@@ -126,6 +131,17 @@
                 select.addEventListener('change', function () {
                     sortEntries(this.value);
                 });
+
+                // Starship image carousel
+                const starshipImage = document.getElementById('starship-image');
+                if (starshipImage) {
+                    let currentImage = 1;
+                    setInterval(function() {
+                        currentImage = currentImage === 1 ? 2 : 1;
+                        const extension = currentImage === 1 ? 'jpg' : 'JPEG';
+                        starshipImage.src = `../media/imgs/starship${currentImage}.${extension}`;
+                    }, 1000); // Switch every 1 second
+                }
             });
         })();
     </script>

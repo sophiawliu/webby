@@ -978,7 +978,7 @@ video {
     display: flex;
     flex-direction: column;
     align-items: center; /* center children to allow symmetric snake */
-    margin-bottom: 8vh;
+    margin-bottom: 1vh;
 }
 .blog-entry {
     margin-bottom: 54px;
